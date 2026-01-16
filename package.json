@@ -61,7 +61,6 @@
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.50.1",
 		"vite": "^6.4.1",
-		"vite-plugin-devtools-json": "^1.0.0",
 		"yaml": "^2.8.2"
 	},
 	"dependencies": {

@@ -1,4 +1,4 @@
-import devtoolsJson from 'vite-plugin-devtools-json';
+
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
@@ -14,7 +14,7 @@ export default defineConfig(({ command }) => {
 			tailwindcss(),
 			sveltekit(),
 			// visualizer({ emitFile: true, filename: 'stats.html' }),
-			!isBuild && devtoolsJson()
+
 		].filter(Boolean),
 
 		server: { fs: { allow: ['.'] } }

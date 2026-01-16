@@ -22,7 +22,28 @@ const catppuccinThemes = {
 };
 
 const highlighter = await createHighlighter({
-	langs: Object.keys(bundledLanguages),
+	langs: [
+		'javascript',
+		'typescript',
+		'html',
+		'css',
+		'bash',
+		'shell',
+		'json',
+		'yaml',
+		'markdown',
+		'python',
+		'rust',
+		'c',
+		'java',
+		'go',
+		'svelte',
+		'toml',
+		'lua',
+		'vim',
+		'docker',
+		'dockerfile'
+	],
 	themes: Object.values(catppuccinThemes)
 });
 
