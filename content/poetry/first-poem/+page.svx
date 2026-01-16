@@ -1,0 +1,18 @@
+~~~
+title.text = "Digital Autumn"
+description = "A reflection on systems and cycles"
+published_at = "2026-01-15"
+tags = ["systems", "nature", "code"]
+~~~
+
+# Digital Autumn
+
+Leaves of logic fall through silicon trees,
+each bit a season passing, memory released.
+The kernel hums its eternal song,
+while processes dance, then move along.
+
+In registers cold, warmth still resides—
+the human touch that code still hides.
+We build in winter, plant in spring,
+and in the autumn, watch data sing.

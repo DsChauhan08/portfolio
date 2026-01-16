@@ -1,0 +1,23 @@
+~~~
+title = "scrapy"
+description = "Lightweight web scraping tool in Rust"
+date = "2025-12-25"
+published = true
+featured = false
+tags = ["rust", "web-scraping", "cli"]
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/scrapy"
+~~~
+
+# scrapy
+
+A lightweight web scraping tool written in Rust.
+
+## Features
+
+- Fast async HTTP requests
+- CSS selector support
+- JSON output
+- Rate limiting built-in

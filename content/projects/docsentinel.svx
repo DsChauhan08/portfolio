@@ -1,0 +1,37 @@
+~~~
+title = "DocSentinel"
+description = "Local-first documentation drift detection and fixing tool"
+date = "2026-01-10"
+published = true
+featured = true
+tags = ["rust", "documentation", "cli", "developer-tools"]
+
+[image]
+url = "/projects/docsentinel.webp"
+alt = "DocSentinel CLI"
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/docsentinel"
+~~~
+
+# DocSentinel
+
+A local-first documentation drift detection and fixing tool written in Rust.
+
+## What it does
+
+DocSentinel watches your codebase and documentation, detecting when they fall out of sync. It uses intelligent diffing to find discrepancies between your code and docs, then suggests fixes or auto-applies them.
+
+## Features
+
+- **Local-first**: Works entirely offline, no cloud dependencies
+- **Fast**: Built in Rust for maximum performance
+- **Smart detection**: Uses AST parsing to understand code changes
+- **Auto-fix**: Can automatically update documentation when safe
+
+## Tech Stack
+
+- Rust
+- Tree-sitter for parsing
+- CLI-first design

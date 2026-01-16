@@ -1,0 +1,23 @@
+~~~
+title = "mixgen"
+description = "YouTube sound download and editing tool CLI"
+date = "2025-12-07"
+published = true
+featured = false
+tags = ["shell", "audio", "cli", "youtube"]
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/mixgen"
+~~~
+
+# mixgen
+
+A CLI tool for downloading and editing audio from YouTube videos.
+
+## Features
+
+- Download audio from YouTube
+- Basic editing (trim, merge)
+- Multiple format support
+- Shell script - works everywhere

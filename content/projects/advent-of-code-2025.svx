@@ -1,0 +1,26 @@
+~~~
+title = "Advent of Code 2025"
+description = "My solutions for Advent of Code 2025"
+date = "2025-12-03"
+published = true
+featured = true
+tags = ["java", "algorithms", "advent-of-code", "problem-solving"]
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/ADVENT_OF_CODE_2025"
+~~~
+
+# Advent of Code 2025
+
+My solutions for [Advent of Code 2025](https://adventofcode.com/2025), written in Java.
+
+## Progress
+
+Working through the daily challenges, focusing on clean solutions over speed.
+
+## Approach
+
+- Readability first
+- No external libraries
+- Documented solutions

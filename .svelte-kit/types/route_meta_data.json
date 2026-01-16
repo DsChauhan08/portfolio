@@ -1,0 +1,65 @@
+{
+	"/": [
+		"src/routes/+page.server.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/about": [
+		"src/routes/about/+page.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/api/preview/[owner]/[repo]": [
+		"src/routes/api/preview/[owner]/[repo]/+server.ts"
+	],
+	"/philosophy": [
+		"src/routes/philosophy/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/philosophy/rss.xml": [
+		"src/routes/philosophy/rss.xml/+server.ts"
+	],
+	"/philosophy/[slug]": [
+		"src/routes/philosophy/[slug]/+page.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/pics": [
+		"src/routes/pics/+page.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/poetry": [
+		"src/routes/poetry/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/poetry/rss.xml": [
+		"src/routes/poetry/rss.xml/+server.ts"
+	],
+	"/poetry/[slug]": [
+		"src/routes/poetry/[slug]/+page.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/posts": [
+		"src/routes/posts/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/posts/rss.xml": [
+		"src/routes/posts/rss.xml/+server.ts"
+	],
+	"/posts/[slug]": [
+		"src/routes/posts/[slug]/+page.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/projects": [
+		"src/routes/projects/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/projects/[slug]": [
+		"src/routes/projects/[slug]/+page.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/sitemap.xml": [
+		"src/routes/sitemap.xml/+server.ts"
+	],
+	"/socials": [
+		"src/routes/+layout.server.ts"
+	]
+}

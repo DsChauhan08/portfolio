@@ -1,0 +1,39 @@
+~~~
+title = "tunl"
+description = "Simplest TCP Proxy - lightweight, fast, no dependencies"
+date = "2025-12-13"
+published = true
+featured = true
+tags = ["c", "networking", "proxy", "tcp", "low-level"]
+
+[image]
+url = "/projects/tunl.webp"
+alt = "tunl TCP proxy"
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/tunl"
+~~~
+
+# tunl
+
+The simplest TCP proxy you'll ever use. Written in pure C with zero dependencies.
+
+## Philosophy
+
+Most proxies are bloated. tunl is not. It does one thing and does it well: forward TCP connections.
+
+## Features
+
+- **Zero dependencies**: Just C and POSIX
+- **Tiny footprint**: Compiles to a few KB
+- **Fast**: No overhead, just raw socket forwarding
+- **Simple config**: Command-line driven
+
+## Usage
+
+```bash
+tunl <listen_port> <target_host> <target_port>
+```
+
+That's it. No config files, no YAML, no JSON. Just works.
