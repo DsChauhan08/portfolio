@@ -7,7 +7,7 @@ featured = true
 tags = ["rust", "documentation", "cli", "developer-tools"]
 
 [image]
-url = "/projects/docsentinel.webp"
+url = "/projects/docsentinel.png"
 alt = "DocSentinel CLI"
 
 [[links]]

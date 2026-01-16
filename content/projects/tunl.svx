@@ -7,7 +7,7 @@ featured = true
 tags = ["c", "networking", "proxy", "tcp", "low-level"]
 
 [image]
-url = "/projects/tunl.webp"
+url = "/projects/tunl.png"
 alt = "tunl TCP proxy"
 
 [[links]]

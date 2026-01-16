@@ -6,6 +6,12 @@ published = true
 featured = false
 tags = ["shell", "audio", "cli", "youtube"]
 
+images = []
+
+[image]
+url = "/projects/mixgen.png"
+alt = "mixgen"
+
 [[links]]
 text = "GitHub"
 url = "https://github.com/DsChauhan08/mixgen"

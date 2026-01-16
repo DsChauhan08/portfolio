@@ -8,7 +8,7 @@ set -e
 # Check parameters
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     echo "Usage: $0 <github-repo-url> <output-filename> [output-directory]"
-    echo "Example: $0 https://github.com/TecharoHQ/anubis anubis ./static/projects"
+    echo "Example: $0 https://github.com/DsChauhan08/docsentinel docsentinel ./static/projects"
     exit 1
 fi
 
@@ -25,50 +25,21 @@ mkdir -p "$OUTPUT_DIR"
 echo "Fetching image for: $OUTPUT_NAME"
 echo "Repository: $REPO_URL"
 
-# Make API request with all required headers
-API_RESPONSE=$(curl -s 'https://lpf64gdwdb.execute-api.us-east-1.amazonaws.com/?repo='"$REPO_URL"'' \
-  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:143.0) Gecko/20100101 Firefox/143.0' \
-  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
-  -H 'Accept-Language: en-CA,en-US;q=0.7,en;q=0.3' \
-  -H 'Accept-Encoding: gzip, deflate, br, zstd' \
-  -H 'Content-Type: application/json; charset=utf-8' \
-  -H 'Origin: https://www.bannerbear.com' \
-  -H 'Connection: keep-alive' \
-  -H 'Referer: https://www.bannerbear.com/' \
-  -H 'Sec-Fetch-Dest: empty' \
-  -H 'Sec-Fetch-Mode: cors' \
-  -H 'Sec-Fetch-Site: cross-site' \
-  -H 'Priority: u=0' \
-  -H 'Pragma: no-cache' \
-  -H 'Cache-Control: no-cache' \
-  -H 'TE: trailers')
+# Extract owner/repo from URL
+# Removes 'https://github.com/' prefix
+REPO_PATH="${REPO_URL#https://github.com/}"
 
-# Check if API response is valid JSON
-if ! echo "$API_RESPONSE" | jq . >/dev/null 2>&1; then
-    echo "Error: Invalid JSON response from API"
-    echo "Response: $API_RESPONSE"
-    exit 1
-fi
+# Construct GitHub OpenGraph URL
+# https://opengraph.githubassets.com/1/owner/repo
+IMAGE_URL="https://opengraph.githubassets.com/1/$REPO_PATH"
 
-# Check if we have at least 3 items (index 2 exists)
-ARRAY_LENGTH=$(echo "$API_RESPONSE" | jq 'length')
-if [ "$ARRAY_LENGTH" -lt 3 ]; then
-    echo "Error: API returned only $ARRAY_LENGTH items, but we need at least 3 (index 2)"
-    exit 1
-fi
-
-# Extract the 3rd image URL (index 2)
-IMAGE_URL=$(echo "$API_RESPONSE" | jq -r '.[2]')
-
-if [ "$IMAGE_URL" = "null" ] || [ -z "$IMAGE_URL" ]; then
-    echo "Error: Could not extract image URL from API response"
-    exit 1
-fi
+echo "Using OpenGraph URL: $IMAGE_URL"
 
 # Download the image to output directory
-echo "Downloading image as ${OUTPUT_DIR}/${OUTPUT_NAME}.jpg..."
-if curl -s -o "${OUTPUT_DIR}/${OUTPUT_NAME}.jpg" "$IMAGE_URL"; then
-    echo "Successfully downloaded ${OUTPUT_DIR}/${OUTPUT_NAME}.jpg"
+echo "Downloading image as ${OUTPUT_DIR}/${OUTPUT_NAME}.png..."
+# GitHub OG images are usually PNGs, but let's save as png to be safe
+if curl -sL -o "${OUTPUT_DIR}/${OUTPUT_NAME}.png" "$IMAGE_URL"; then
+    echo "Successfully downloaded ${OUTPUT_DIR}/${OUTPUT_NAME}.png"
 else
     echo "Error: Failed to download image"
     exit 1
@@ -77,15 +48,15 @@ fi
 # Check if cwebp is available for conversion
 if command -v cwebp &>/dev/null; then
     echo "Converting to WebP format..."
-    if cwebp -q 50 "${OUTPUT_DIR}/${OUTPUT_NAME}.jpg" -o "${OUTPUT_DIR}/${OUTPUT_NAME}.webp" &>/dev/null; then
+    if cwebp -q 75 "${OUTPUT_DIR}/${OUTPUT_NAME}.png" -o "${OUTPUT_DIR}/${OUTPUT_NAME}.webp" &>/dev/null; then
         echo "Successfully converted to WebP"
-        # Remove the JPG file after successful conversion
-        rm -f "${OUTPUT_DIR}/${OUTPUT_NAME}.jpg"
+        # Remove the PNG file after successful conversion
+        rm -f "${OUTPUT_DIR}/${OUTPUT_NAME}.png"
         echo "Done! WebP file created: ${OUTPUT_DIR}/${OUTPUT_NAME}.webp"
     else
-        echo "Warning: WebP conversion failed, keeping JPG file"
+        echo "Warning: WebP conversion failed, keeping PNG file"
     fi
 else
-    echo "Warning: cwebp not installed. Install with: brew install webp"
-    echo "Keeping JPG file: ${OUTPUT_DIR}/${OUTPUT_NAME}.jpg"
+    echo "Warning: cwebp not installed. Install with: sudo apt install webp or brew install webp"
+    echo "Keeping PNG file: ${OUTPUT_DIR}/${OUTPUT_NAME}.png"
 fi

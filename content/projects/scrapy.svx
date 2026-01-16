@@ -6,6 +6,12 @@ published = true
 featured = false
 tags = ["rust", "web-scraping", "cli"]
 
+images = []
+
+[image]
+url = "/projects/scrapy.png"
+alt = "scrapy"
+
 [[links]]
 text = "GitHub"
 url = "https://github.com/DsChauhan08/scrapy"

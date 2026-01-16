@@ -7,19 +7,9 @@ typeset -A PROJECT_REPOS
 # Assign values to the associative array.
 # Note the syntax: key followed by value, separated by spaces within the ()
 PROJECT_REPOS=(
-    "abacus" "https://github.com/jasonlovesdoggo/abacus"
-    "anubis" "https://github.com/TecharoHQ/anubis"
-    "foodle" "https://github.com/JasonLovesDoggo/foodle"
-    "hackathonscanada" "https://github.com/Hackathons-Canada/HackathonsCanada"
-    "mctf" "https://github.com/mcpt/ctf"
-    "metropolis" "https://github.com/wlmac/metropolis"
-    "nyx" "https://github.com/JasonLovesDoggo/nyx"
-    "partneredu" "https://github.com/JasonLovesDoggo/PartnerEdu"
-    "physioquest" "https://github.com/JasonLovesDoggo/jamhacks"
-    "quicture" "https://github.com/JasonLovesDoggo/quicture"
-    "redditvideomakerbot" "https://github.com/elebumm/RedditVideoMakerBot"
-    "scavenger" "https://github.com/wlmac/scavenger"
-    "screentimeshowdown" "https://github.com/JasonLovesDoggo/screentimeshowdown"
-    "toyreduce" "https://github.com/JasonLovesDoggo/toyreduce"
+    "docsentinel" "https://github.com/DsChauhan08/docsentinel"
+    "tunl" "https://github.com/DsChauhan08/tunl"
+    "scrapy" "https://github.com/DsChauhan08/scrapy"
+    "mixgen" "https://github.com/DsChauhan08/mixgen"
+    "advent-of-code-2025" "https://github.com/DsChauhan08/ADVENT_OF_CODE_2025"
 )
-

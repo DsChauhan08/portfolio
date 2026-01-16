@@ -6,6 +6,12 @@ published = true
 featured = true
 tags = ["java", "algorithms", "advent-of-code", "problem-solving"]
 
+images = []
+
+[image]
+url = "/projects/advent-of-code-2025.png"
+alt = "Advent of Code 2025"
+
 [[links]]
 text = "GitHub"
 url = "https://github.com/DsChauhan08/ADVENT_OF_CODE_2025"
