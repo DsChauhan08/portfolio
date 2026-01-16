@@ -3,7 +3,7 @@ import adapter from '@sveltejs/adapter-vercel';
 import { escapeSvelte, mdsvex } from 'mdsvex';
 import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
-import { bundledLanguages, createHighlighter } from 'shiki';
+import { createHighlighter } from 'shiki';
 import { transformerColorizedBrackets } from '@shikijs/colorized-brackets';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex-svelte';

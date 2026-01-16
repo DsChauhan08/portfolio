@@ -10,7 +10,7 @@ export default defineConfig(({ command }) => {
 
 	return {
 		plugins: [
-			isBuild && enhancedImages(), // only enable when building for production
+			// isBuild && enhancedImages(), // only enable when building for production
 			tailwindcss(),
 			sveltekit(),
 			// visualizer({ emitFile: true, filename: 'stats.html' }),

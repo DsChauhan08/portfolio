@@ -1,6 +1,6 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "_app/immutable/entry/app.BHl4KwnQ.js",
+    "file": "_app/immutable/entry/app.DdyBdRtn.js",
     "name": "entry/app",
     "src": ".svelte-kit/generated/client-optimized/app.js",
     "isEntry": true,
@@ -33,7 +33,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "_app/immutable/nodes/0.DyVmD6om.js",
+    "file": "_app/immutable/nodes/0.D0oBgDkp.js",
     "name": "nodes/0",
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
     "isEntry": true,
@@ -48,14 +48,14 @@
       "_BHzYtxdM.js",
       "_BAktbbBW.js",
       "_CDEKRZbE.js",
-      "_BBbT2pT1.js",
+      "_B8gMDT7m.js",
       "_DPeNf-V5.js",
       "_Dl2H6leW.js",
       "_CnW4CWI0.js",
       "_EyJCFt1t.js",
       "_C-np1APv.js",
       "_DtbfvI6e.js",
-      "_5k8lECY2.js"
+      "_DhUqbzPi.js"
     ],
     "css": [
       "_app/immutable/assets/0.6fsaAjeq.css"
@@ -68,7 +68,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.DCHV0zlE.js",
+    "file": "_app/immutable/nodes/1.CYBo5cTd.js",
     "name": "nodes/1",
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
     "isEntry": true,
@@ -82,17 +82,17 @@
       "_CDEKRZbE.js",
       "_BAktbbBW.js",
       "_DYPN9kdd.js",
-      "_BBbT2pT1.js"
+      "_B8gMDT7m.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/10.js": {
-    "file": "_app/immutable/nodes/10.BRhwzork.js",
+    "file": "_app/immutable/nodes/10.nvWLEiQN.js",
     "name": "nodes/10",
     "src": ".svelte-kit/generated/client-optimized/nodes/10.js",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_BoDd1b60.js",
+      "_DU5MwIo4.js",
       "_Bzak7iHL.js",
       "_DPeNf-V5.js",
       "_DL-IYu9g.js",
@@ -104,7 +104,7 @@
       "_CQ57a-RY.js",
       "_By-NySyD.js",
       "_DoXzxvnB.js",
-      "_BBbT2pT1.js"
+      "_B8gMDT7m.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/11.js": {
@@ -129,7 +129,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/12.js": {
-    "file": "_app/immutable/nodes/12.B2rld9Np.js",
+    "file": "_app/immutable/nodes/12.hFflkfAD.js",
     "name": "nodes/12",
     "src": ".svelte-kit/generated/client-optimized/nodes/12.js",
     "isEntry": true,
@@ -140,7 +140,7 @@
       "_DPeNf-V5.js",
       "_DL-IYu9g.js",
       "_DRrPUmJr.js",
-      "_BoDd1b60.js",
+      "_DU5MwIo4.js",
       "_CV3bgGdM.js",
       "_BobqL6A_.js",
       "_Dl2H6leW.js",
@@ -152,7 +152,7 @@
       "_EyJCFt1t.js",
       "_DYPN9kdd.js",
       "_B-gtiBAT.js",
-      "_BBbT2pT1.js",
+      "_B8gMDT7m.js",
       "_CQ57a-RY.js",
       "_yg5tvooQ.js"
     ],
@@ -243,13 +243,13 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/5.js": {
-    "file": "_app/immutable/nodes/5.Caz2U2bQ.js",
+    "file": "_app/immutable/nodes/5.Dt6IDBIG.js",
     "name": "nodes/5",
     "src": ".svelte-kit/generated/client-optimized/nodes/5.js",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_BoDd1b60.js",
+      "_DU5MwIo4.js",
       "_Bzak7iHL.js",
       "_DPeNf-V5.js",
       "_DL-IYu9g.js",
@@ -261,11 +261,11 @@
       "_CQ57a-RY.js",
       "_By-NySyD.js",
       "_DoXzxvnB.js",
-      "_DOG7bz8X.js"
+      "_hlBp2Aiv.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/6.js": {
-    "file": "_app/immutable/nodes/6.DOagzku2.js",
+    "file": "_app/immutable/nodes/6.DprDrz1K.js",
     "name": "nodes/6",
     "src": ".svelte-kit/generated/client-optimized/nodes/6.js",
     "isEntry": true,
@@ -284,166 +284,33 @@
       "_app/immutable/assets/6.Df7HMr8M.css"
     ],
     "assets": [
-      "_app/immutable/assets/517355716.C4wbNKkS.avif",
-      "_app/immutable/assets/517355716.CRvl8MUo.avif",
-      "_app/immutable/assets/517355716.TQaAyghm.avif",
-      "_app/immutable/assets/517355716.BSp8-2pv.webp",
-      "_app/immutable/assets/517355716.DVQA8kYt.webp",
-      "_app/immutable/assets/517355716.DkC8_Q1l.webp",
-      "_app/immutable/assets/IMG_0013.CttTLx1l.avif",
-      "_app/immutable/assets/IMG_0013.CJBK1MOf.avif",
-      "_app/immutable/assets/IMG_0013.BkfUj_4F.avif",
-      "_app/immutable/assets/IMG_0013.D3UibwUD.webp",
-      "_app/immutable/assets/IMG_0013._H5qD19J.webp",
-      "_app/immutable/assets/IMG_0013.DKiwz05N.webp",
-      "_app/immutable/assets/IMG_0036.Du_6SkYR.avif",
-      "_app/immutable/assets/IMG_0036.XSGqAkIX.avif",
-      "_app/immutable/assets/IMG_0036.BfhVUoix.avif",
-      "_app/immutable/assets/IMG_0036.bhKx1f1o.webp",
-      "_app/immutable/assets/IMG_0036.DKoqHutB.webp",
-      "_app/immutable/assets/IMG_0036.DPA5FJH7.webp",
-      "_app/immutable/assets/IMG_0542.BvCf2aQk.avif",
-      "_app/immutable/assets/IMG_0542.9CHTCCmC.avif",
-      "_app/immutable/assets/IMG_0542.BJ_CO8sq.avif",
-      "_app/immutable/assets/IMG_0542.DtpDqXOj.webp",
-      "_app/immutable/assets/IMG_0542.B7b5d_qY.webp",
-      "_app/immutable/assets/IMG_0542.HsimIlHc.webp",
-      "_app/immutable/assets/IMG_20251107_205325_165.DgG196EM.avif",
-      "_app/immutable/assets/IMG_20251107_205325_165.k4JOm_P1.avif",
-      "_app/immutable/assets/IMG_20251107_205325_165.Bg87dwu3.webp",
-      "_app/immutable/assets/IMG_20251107_205325_165.BuzATooA.webp",
-      "_app/immutable/assets/IMG_9555.B52hcppI.avif",
-      "_app/immutable/assets/IMG_9555.DAqukuc4.avif",
-      "_app/immutable/assets/IMG_9555.BTv7EXkQ.avif",
-      "_app/immutable/assets/IMG_9555.Cs5bfF-o.webp",
-      "_app/immutable/assets/IMG_9555.DD2v_65m.webp",
-      "_app/immutable/assets/IMG_9555.Cgv07Y9i.webp",
-      "_app/immutable/assets/IMG_9884.CzbvvEke.avif",
-      "_app/immutable/assets/IMG_9884.D_2KmCg_.avif",
-      "_app/immutable/assets/IMG_9884.TON4Nn8C.avif",
-      "_app/immutable/assets/IMG_9884.YCBWcmF_.webp",
-      "_app/immutable/assets/IMG_9884.QqBQk4Eo.webp",
-      "_app/immutable/assets/IMG_9884.V_yXLH0z.webp",
-      "_app/immutable/assets/PXL_20220404_221001861.CZHZ3V0Y.avif",
-      "_app/immutable/assets/PXL_20220404_221001861.Bx7pHfQB.avif",
-      "_app/immutable/assets/PXL_20220404_221001861.LrMw6x23.avif",
-      "_app/immutable/assets/PXL_20220404_221001861.Biqtz8A9.webp",
-      "_app/immutable/assets/PXL_20220404_221001861.BGkOiwqx.webp",
-      "_app/immutable/assets/PXL_20220404_221001861.Dkq6s6l5.webp",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.DsK5bohc.avif",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.B5w4T_Sc.avif",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.EGtjcJB6.avif",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.Cus1QzkV.webp",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.Bg_iXkvu.webp",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.468GBtmr.webp",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.DjZAM2Z0.avif",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.D2NGv1aZ.avif",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.C4BL8UMv.avif",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.CITN0HOr.webp",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.CVZCrjFN.webp",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.JNw01dWX.webp",
-      "_app/immutable/assets/PXL_20221009_195927011.C6qwSwg3.avif",
-      "_app/immutable/assets/PXL_20221009_195927011.2L8y3cqi.avif",
-      "_app/immutable/assets/PXL_20221009_195927011.oQMBaUAj.avif",
-      "_app/immutable/assets/PXL_20221009_195927011.CPN1g-lX.webp",
-      "_app/immutable/assets/PXL_20221009_195927011.-U1YUNTP.webp",
-      "_app/immutable/assets/PXL_20221009_195927011.CcKfdVSS.webp",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.CquBqT-P.avif",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.tjNc6j3H.avif",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.BLrd5OLf.avif",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.Cfc0QiBz.webp",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.Bo5zaast.webp",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.DMBHLLWi.webp",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.C4YUIEpI.avif",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.B-dTRZkf.avif",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.DKgPcDnG.avif",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.CC67uD6E.webp",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.18ZJvq5d.webp",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.05g83yuz.webp",
-      "_app/immutable/assets/PXL_20240414_234010698.C4RLMM_O.avif",
-      "_app/immutable/assets/PXL_20240414_234010698.B3FUnUUx.avif",
-      "_app/immutable/assets/PXL_20240414_234010698.o-87f4iD.avif",
-      "_app/immutable/assets/PXL_20240414_234010698.D7QOuvyL.webp",
-      "_app/immutable/assets/PXL_20240414_234010698.DuoLXkCF.webp",
-      "_app/immutable/assets/PXL_20240414_234010698.CHXkMb9N.webp",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.BnMxMxcr.avif",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.BNX5um8a.avif",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.BlUhxhL_.avif",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.BFfJAVXl.webp",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.sV3-ABfc.webp",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.De2gz2Iy.webp",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.B-D0wfFF.avif",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.C7dkmmGG.avif",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.DCuBkvaK.avif",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.CaaappeY.webp",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.CuSl4qDW.webp",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.DzcJehsz.webp",
-      "_app/immutable/assets/PXL_20250001.CJfvXly8.avif",
-      "_app/immutable/assets/PXL_20250001.97jbGy-h.avif",
-      "_app/immutable/assets/PXL_20250001.T30GJ0q1.avif",
-      "_app/immutable/assets/PXL_20250001.CkOPNsKO.webp",
-      "_app/immutable/assets/PXL_20250001.LRUIEl3R.webp",
-      "_app/immutable/assets/PXL_20250001.BWRY1joe.webp",
-      "_app/immutable/assets/PXL_20250311_221838769.bCjxNlOY.avif",
-      "_app/immutable/assets/PXL_20250311_221838769.m8I41Wdy.avif",
-      "_app/immutable/assets/PXL_20250311_221838769.CkoPcw9M.avif",
-      "_app/immutable/assets/PXL_20250311_221838769.BPASEskj.webp",
-      "_app/immutable/assets/PXL_20250311_221838769.D8B8XbK3.webp",
-      "_app/immutable/assets/PXL_20250311_221838769.CnKPeQ4X.webp",
-      "_app/immutable/assets/PXL_20250829_235850782.FY1-XFd0.avif",
-      "_app/immutable/assets/PXL_20250829_235850782.jANF5CAt.avif",
-      "_app/immutable/assets/PXL_20250829_235850782.D_oi27CV.avif",
-      "_app/immutable/assets/PXL_20250829_235850782.7oCUbOwo.webp",
-      "_app/immutable/assets/PXL_20250829_235850782.X8SRPtfB.webp",
-      "_app/immutable/assets/PXL_20250829_235850782.D9FCdAq5.webp",
-      "_app/immutable/assets/PXL_20251031_221431315.WrZEMCLg.avif",
-      "_app/immutable/assets/PXL_20251031_221431315.CetFwSse.avif",
-      "_app/immutable/assets/PXL_20251031_221431315.BslwYmI1.avif",
-      "_app/immutable/assets/PXL_20251031_221431315.BgNQ-0m5.webp",
-      "_app/immutable/assets/PXL_20251031_221431315.D_MxXWoK.webp",
-      "_app/immutable/assets/PXL_20251031_221431315.CGq3AZor.webp",
-      "_app/immutable/assets/PXL_20251103_220514644~2.qO2adx3e.avif",
-      "_app/immutable/assets/PXL_20251103_220514644~2.BEwKISiv.avif",
-      "_app/immutable/assets/PXL_20251103_220514644~2.B21lMOcV.avif",
-      "_app/immutable/assets/PXL_20251103_220514644~2.DL4EowI_.webp",
-      "_app/immutable/assets/PXL_20251103_220514644~2.DvumTCoO.webp",
-      "_app/immutable/assets/PXL_20251103_220514644~2.BclZ8vUp.webp",
-      "_app/immutable/assets/PXL_20251106_012413214.C3ESJVY_.avif",
-      "_app/immutable/assets/PXL_20251106_012413214.CcWK1j2k.avif",
-      "_app/immutable/assets/PXL_20251106_012413214.C_u-0st-.avif",
-      "_app/immutable/assets/PXL_20251106_012413214.BUxlPAgd.webp",
-      "_app/immutable/assets/PXL_20251106_012413214.CweoiCb0.webp",
-      "_app/immutable/assets/PXL_20251106_012413214.DxPScHeZ.webp",
-      "_app/immutable/assets/PXL_20251114_010033442.Crjy07JV.avif",
-      "_app/immutable/assets/PXL_20251114_010033442.MEK7mKyH.avif",
-      "_app/immutable/assets/PXL_20251114_010033442.6zU2zPWS.avif",
-      "_app/immutable/assets/PXL_20251114_010033442.CGLaXWab.webp",
-      "_app/immutable/assets/PXL_20251114_010033442.B4NRwIOt.webp",
-      "_app/immutable/assets/PXL_20251114_010033442.CfYO3Pj8.webp",
-      "_app/immutable/assets/_MG_0564.BliMquyZ.avif",
-      "_app/immutable/assets/_MG_0564.XKuOXHcQ.avif",
-      "_app/immutable/assets/_MG_0564.DLEf9jzX.avif",
-      "_app/immutable/assets/_MG_0564.Cst7LV7m.webp",
-      "_app/immutable/assets/_MG_0564.C9K8FnAd.webp",
-      "_app/immutable/assets/_MG_0564.CFXkhSIa.webp",
-      "_app/immutable/assets/_MG_0577.BDJ4k7Wp.avif",
-      "_app/immutable/assets/_MG_0577.BKMGaZzg.avif",
-      "_app/immutable/assets/_MG_0577.BNN7aIyA.avif",
-      "_app/immutable/assets/_MG_0577.Cqb_RNCZ.webp",
-      "_app/immutable/assets/_MG_0577.C0Y6tHzg.webp",
-      "_app/immutable/assets/_MG_0577.CNDQolVI.webp",
-      "_app/immutable/assets/space.8uRoYWmn.avif",
-      "_app/immutable/assets/space.DNS2qPok.avif",
-      "_app/immutable/assets/space.S9ZenYjM.avif",
-      "_app/immutable/assets/space.wdgG6nds.webp",
-      "_app/immutable/assets/space.SkPOCpdJ.webp",
-      "_app/immutable/assets/space.DeeUO03E.webp",
-      "_app/immutable/assets/unity.t5nbVm-H.avif",
-      "_app/immutable/assets/unity.6kwB1-Jw.avif",
-      "_app/immutable/assets/unity.Bn0vQRUE.avif",
-      "_app/immutable/assets/unity.Cgj4tS4j.webp",
-      "_app/immutable/assets/unity.B_8I4HGB.webp",
-      "_app/immutable/assets/unity.DJ1N0rlg.webp"
+      "_app/immutable/assets/517355716.9EdqCTGC.jpg",
+      "_app/immutable/assets/IMG_0013.B-dilVNP.jpg",
+      "_app/immutable/assets/IMG_0036.BUndmE3Z.jpg",
+      "_app/immutable/assets/IMG_0542.B-6eQK1Y.jpg",
+      "_app/immutable/assets/IMG_20251107_205325_165.BVSc4cG5.jpg",
+      "_app/immutable/assets/IMG_9555.DpJKibvk.jpg",
+      "_app/immutable/assets/IMG_9884.BncWTysN.jpg",
+      "_app/immutable/assets/PXL_20220404_221001861.Dym6yvyG.jpg",
+      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.D8TRLHaL.jpg",
+      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.DE_AqHb6.jpg",
+      "_app/immutable/assets/PXL_20221009_195927011.tdkm_-Ng.jpg",
+      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.Djq8aOZj.jpg",
+      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.Zp74VoDg.jpg",
+      "_app/immutable/assets/PXL_20240414_234010698.CpDP_0uQ.jpg",
+      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.dK7tbIjC.jpg",
+      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.B-RAy2I9.jpg",
+      "_app/immutable/assets/PXL_20250001.BjVpW9Z0.jpg",
+      "_app/immutable/assets/PXL_20250311_221838769.DdMm3mkz.jpg",
+      "_app/immutable/assets/PXL_20250829_235850782.BA54zDb6.jpg",
+      "_app/immutable/assets/PXL_20251031_221431315.C8Pkmc-v.jpg",
+      "_app/immutable/assets/PXL_20251103_220514644~2.Dn43ijo-.jpg",
+      "_app/immutable/assets/PXL_20251106_012413214.O3kQY4Qu.jpg",
+      "_app/immutable/assets/PXL_20251114_010033442.7i-Evx-G.jpg",
+      "_app/immutable/assets/_MG_0564.CuRljals.jpg",
+      "_app/immutable/assets/_MG_0577.5Ph4-yEo.jpg",
+      "_app/immutable/assets/space.B7veovbH.jpg",
+      "_app/immutable/assets/unity.DaJEl71o.jpg"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/7.js": {
@@ -466,14 +333,14 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/8.js": {
-    "file": "_app/immutable/nodes/8.D_Q-Al8V.js",
+    "file": "_app/immutable/nodes/8.BR9eMF5f.js",
     "name": "nodes/8",
     "src": ".svelte-kit/generated/client-optimized/nodes/8.js",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_Dp1pzeXC.js",
-      "_BoDd1b60.js",
+      "_DU5MwIo4.js",
       "_Bzak7iHL.js",
       "_DPeNf-V5.js",
       "_DL-IYu9g.js",
@@ -485,7 +352,7 @@
       "_CQ57a-RY.js",
       "_By-NySyD.js",
       "_DoXzxvnB.js",
-      "_DOG7bz8X.js"
+      "_hlBp2Aiv.js"
     ],
     "dynamicImports": [
       "content/poetry/first-poem/+page.svx"
@@ -517,15 +384,6 @@
       "_DL-IYu9g.js"
     ]
   },
-  "_5k8lECY2.js": {
-    "file": "_app/immutable/chunks/5k8lECY2.js",
-    "name": "entry",
-    "imports": [
-      "_BO8472px.js",
-      "_COgXYPT9.js",
-      "_DL-IYu9g.js"
-    ]
-  },
   "_B-gtiBAT.js": {
     "file": "_app/immutable/chunks/B-gtiBAT.js",
     "name": "attributes",
@@ -534,18 +392,18 @@
       "_BAktbbBW.js"
     ]
   },
+  "_B8gMDT7m.js": {
+    "file": "_app/immutable/chunks/B8gMDT7m.js",
+    "name": "index",
+    "imports": [
+      "_hlBp2Aiv.js"
+    ]
+  },
   "_BAktbbBW.js": {
     "file": "_app/immutable/chunks/BAktbbBW.js",
     "name": "style",
     "imports": [
       "_DL-IYu9g.js"
-    ]
-  },
-  "_BBbT2pT1.js": {
-    "file": "_app/immutable/chunks/BBbT2pT1.js",
-    "name": "index",
-    "imports": [
-      "_DOG7bz8X.js"
     ]
   },
   "_BHzYtxdM.js": {
@@ -572,16 +430,6 @@
     "imports": [
       "_DL-IYu9g.js",
       "_BHzYtxdM.js"
-    ]
-  },
-  "_BoDd1b60.js": {
-    "file": "_app/immutable/chunks/BoDd1b60.js",
-    "name": "content",
-    "imports": [
-      "_5k8lECY2.js"
-    ],
-    "css": [
-      "_app/immutable/assets/content.B-0Ip5Si.css"
     ]
   },
   "_BobqL6A_.js": {
@@ -682,13 +530,6 @@
     "file": "_app/immutable/chunks/DL-IYu9g.js",
     "name": "branches"
   },
-  "_DOG7bz8X.js": {
-    "file": "_app/immutable/chunks/DOG7bz8X.js",
-    "name": "client",
-    "imports": [
-      "_5k8lECY2.js"
-    ]
-  },
   "_DPeNf-V5.js": {
     "file": "_app/immutable/chunks/DPeNf-V5.js",
     "name": "legacy",
@@ -703,10 +544,29 @@
       "_DL-IYu9g.js"
     ]
   },
+  "_DU5MwIo4.js": {
+    "file": "_app/immutable/chunks/DU5MwIo4.js",
+    "name": "content",
+    "imports": [
+      "_DhUqbzPi.js"
+    ],
+    "css": [
+      "_app/immutable/assets/content.B-0Ip5Si.css"
+    ]
+  },
   "_DYPN9kdd.js": {
     "file": "_app/immutable/chunks/DYPN9kdd.js",
     "name": "svelte-head",
     "imports": [
+      "_DL-IYu9g.js"
+    ]
+  },
+  "_DhUqbzPi.js": {
+    "file": "_app/immutable/chunks/DhUqbzPi.js",
+    "name": "entry",
+    "imports": [
+      "_BO8472px.js",
+      "_COgXYPT9.js",
       "_DL-IYu9g.js"
     ]
   },
@@ -758,6 +618,13 @@
     "file": "_app/immutable/assets/content.B-0Ip5Si.css",
     "src": "_content.B-0Ip5Si.css"
   },
+  "_hlBp2Aiv.js": {
+    "file": "_app/immutable/chunks/hlBp2Aiv.js",
+    "name": "client",
+    "imports": [
+      "_DhUqbzPi.js"
+    ]
+  },
   "_yg5tvooQ.js": {
     "file": "_app/immutable/chunks/yg5tvooQ.js",
     "name": "ProjectTags",
@@ -801,120 +668,120 @@
     "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "_app/immutable/entry/start.CxhNjbEn.js",
+    "file": "_app/immutable/entry/start.vi06r8kz.js",
     "name": "entry/start",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_5k8lECY2.js"
+      "_DhUqbzPi.js"
     ]
   },
   "src/content/images/517355716.jpg": {
-    "file": "_app/immutable/assets/517355716.C4wbNKkS.avif",
+    "file": "_app/immutable/assets/517355716.9EdqCTGC.jpg",
     "src": "src/content/images/517355716.jpg"
   },
   "src/content/images/IMG_0013.jpg": {
-    "file": "_app/immutable/assets/IMG_0013.CttTLx1l.avif",
+    "file": "_app/immutable/assets/IMG_0013.B-dilVNP.jpg",
     "src": "src/content/images/IMG_0013.jpg"
   },
   "src/content/images/IMG_0036.jpg": {
-    "file": "_app/immutable/assets/IMG_0036.Du_6SkYR.avif",
+    "file": "_app/immutable/assets/IMG_0036.BUndmE3Z.jpg",
     "src": "src/content/images/IMG_0036.jpg"
   },
   "src/content/images/IMG_0542.jpg": {
-    "file": "_app/immutable/assets/IMG_0542.BvCf2aQk.avif",
+    "file": "_app/immutable/assets/IMG_0542.B-6eQK1Y.jpg",
     "src": "src/content/images/IMG_0542.jpg"
   },
   "src/content/images/IMG_20251107_205325_165.jpg": {
-    "file": "_app/immutable/assets/IMG_20251107_205325_165.DgG196EM.avif",
+    "file": "_app/immutable/assets/IMG_20251107_205325_165.BVSc4cG5.jpg",
     "src": "src/content/images/IMG_20251107_205325_165.jpg"
   },
   "src/content/images/IMG_9555.jpg": {
-    "file": "_app/immutable/assets/IMG_9555.B52hcppI.avif",
+    "file": "_app/immutable/assets/IMG_9555.DpJKibvk.jpg",
     "src": "src/content/images/IMG_9555.jpg"
   },
   "src/content/images/IMG_9884.jpg": {
-    "file": "_app/immutable/assets/IMG_9884.CzbvvEke.avif",
+    "file": "_app/immutable/assets/IMG_9884.BncWTysN.jpg",
     "src": "src/content/images/IMG_9884.jpg"
   },
   "src/content/images/PXL_20220404_221001861.jpg": {
-    "file": "_app/immutable/assets/PXL_20220404_221001861.CZHZ3V0Y.avif",
+    "file": "_app/immutable/assets/PXL_20220404_221001861.Dym6yvyG.jpg",
     "src": "src/content/images/PXL_20220404_221001861.jpg"
   },
   "src/content/images/PXL_20220626_030332663.NIGHT.jpg": {
-    "file": "_app/immutable/assets/PXL_20220626_030332663.NIGHT.DsK5bohc.avif",
+    "file": "_app/immutable/assets/PXL_20220626_030332663.NIGHT.D8TRLHaL.jpg",
     "src": "src/content/images/PXL_20220626_030332663.NIGHT.jpg"
   },
   "src/content/images/PXL_20220918_221838148.PORTRAIT.jpg": {
-    "file": "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.DjZAM2Z0.avif",
+    "file": "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.DE_AqHb6.jpg",
     "src": "src/content/images/PXL_20220918_221838148.PORTRAIT.jpg"
   },
   "src/content/images/PXL_20221009_195927011.jpg": {
-    "file": "_app/immutable/assets/PXL_20221009_195927011.C6qwSwg3.avif",
+    "file": "_app/immutable/assets/PXL_20221009_195927011.tdkm_-Ng.jpg",
     "src": "src/content/images/PXL_20221009_195927011.jpg"
   },
   "src/content/images/PXL_20230719_022112889.NIGHT.jpg": {
-    "file": "_app/immutable/assets/PXL_20230719_022112889.NIGHT.CquBqT-P.avif",
+    "file": "_app/immutable/assets/PXL_20230719_022112889.NIGHT.Djq8aOZj.jpg",
     "src": "src/content/images/PXL_20230719_022112889.NIGHT.jpg"
   },
   "src/content/images/PXL_20230720_033605781.NIGHT~2.jpg": {
-    "file": "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.CC67uD6E.webp",
+    "file": "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.Zp74VoDg.jpg",
     "src": "src/content/images/PXL_20230720_033605781.NIGHT~2.jpg"
   },
   "src/content/images/PXL_20240414_234010698.jpg": {
-    "file": "_app/immutable/assets/PXL_20240414_234010698.D7QOuvyL.webp",
+    "file": "_app/immutable/assets/PXL_20240414_234010698.CpDP_0uQ.jpg",
     "src": "src/content/images/PXL_20240414_234010698.jpg"
   },
   "src/content/images/PXL_20240514_232351202.PORTRAIT.jpg": {
-    "file": "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.BnMxMxcr.avif",
+    "file": "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.dK7tbIjC.jpg",
     "src": "src/content/images/PXL_20240514_232351202.PORTRAIT.jpg"
   },
   "src/content/images/PXL_20240514_232408454.PORTRAIT.ORIGINAL.jpg": {
-    "file": "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.CaaappeY.webp",
+    "file": "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.B-RAy2I9.jpg",
     "src": "src/content/images/PXL_20240514_232408454.PORTRAIT.ORIGINAL.jpg"
   },
   "src/content/images/PXL_20250001.jpg": {
-    "file": "_app/immutable/assets/PXL_20250001.CJfvXly8.avif",
+    "file": "_app/immutable/assets/PXL_20250001.BjVpW9Z0.jpg",
     "src": "src/content/images/PXL_20250001.jpg"
   },
   "src/content/images/PXL_20250311_221838769.jpg": {
-    "file": "_app/immutable/assets/PXL_20250311_221838769.bCjxNlOY.avif",
+    "file": "_app/immutable/assets/PXL_20250311_221838769.DdMm3mkz.jpg",
     "src": "src/content/images/PXL_20250311_221838769.jpg"
   },
   "src/content/images/PXL_20250829_235850782.jpg": {
-    "file": "_app/immutable/assets/PXL_20250829_235850782.FY1-XFd0.avif",
+    "file": "_app/immutable/assets/PXL_20250829_235850782.BA54zDb6.jpg",
     "src": "src/content/images/PXL_20250829_235850782.jpg"
   },
   "src/content/images/PXL_20251031_221431315.jpg": {
-    "file": "_app/immutable/assets/PXL_20251031_221431315.WrZEMCLg.avif",
+    "file": "_app/immutable/assets/PXL_20251031_221431315.C8Pkmc-v.jpg",
     "src": "src/content/images/PXL_20251031_221431315.jpg"
   },
   "src/content/images/PXL_20251103_220514644~2.jpg": {
-    "file": "_app/immutable/assets/PXL_20251103_220514644~2.qO2adx3e.avif",
+    "file": "_app/immutable/assets/PXL_20251103_220514644~2.Dn43ijo-.jpg",
     "src": "src/content/images/PXL_20251103_220514644~2.jpg"
   },
   "src/content/images/PXL_20251106_012413214.jpg": {
-    "file": "_app/immutable/assets/PXL_20251106_012413214.C3ESJVY_.avif",
+    "file": "_app/immutable/assets/PXL_20251106_012413214.O3kQY4Qu.jpg",
     "src": "src/content/images/PXL_20251106_012413214.jpg"
   },
   "src/content/images/PXL_20251114_010033442.jpg": {
-    "file": "_app/immutable/assets/PXL_20251114_010033442.Crjy07JV.avif",
+    "file": "_app/immutable/assets/PXL_20251114_010033442.7i-Evx-G.jpg",
     "src": "src/content/images/PXL_20251114_010033442.jpg"
   },
   "src/content/images/_MG_0564.jpg": {
-    "file": "_app/immutable/assets/_MG_0564.BliMquyZ.avif",
+    "file": "_app/immutable/assets/_MG_0564.CuRljals.jpg",
     "src": "src/content/images/_MG_0564.jpg"
   },
   "src/content/images/_MG_0577.jpg": {
-    "file": "_app/immutable/assets/_MG_0577.BNN7aIyA.avif",
+    "file": "_app/immutable/assets/_MG_0577.5Ph4-yEo.jpg",
     "src": "src/content/images/_MG_0577.jpg"
   },
   "src/content/images/space.jpg": {
-    "file": "_app/immutable/assets/space.8uRoYWmn.avif",
+    "file": "_app/immutable/assets/space.B7veovbH.jpg",
     "src": "src/content/images/space.jpg"
   },
   "src/content/images/unity.jpg": {
-    "file": "_app/immutable/assets/unity.t5nbVm-H.avif",
+    "file": "_app/immutable/assets/unity.DaJEl71o.jpg",
     "src": "src/content/images/unity.jpg"
   },
   "src/lib/icons/Devpost.svelte": {
