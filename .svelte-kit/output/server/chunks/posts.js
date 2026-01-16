@@ -20,8 +20,6 @@ const postService = createContentService({
   sort: (a, b) => getSortValue(b) - getSortValue(a)
 });
 const getAllPosts = postService.getAll;
-const getPostBySlug = postService.getBySlug;
 export {
-  getPostBySlug as a,
   getAllPosts as g
 };

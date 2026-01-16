@@ -37,17 +37,6 @@
 		"src/routes/poetry/[slug]/+page.ts",
 		"src/routes/+layout.server.ts"
 	],
-	"/posts": [
-		"src/routes/posts/+page.server.ts",
-		"src/routes/+layout.server.ts"
-	],
-	"/posts/rss.xml": [
-		"src/routes/posts/rss.xml/+server.ts"
-	],
-	"/posts/[slug]": [
-		"src/routes/posts/[slug]/+page.ts",
-		"src/routes/+layout.server.ts"
-	],
 	"/projects": [
 		"src/routes/projects/+page.server.ts",
 		"src/routes/+layout.server.ts"

@@ -267,114 +267,6 @@
       "_internal.js"
     ]
   },
-  "src/content/images/517355716.jpg": {
-    "file": "_app/immutable/assets/517355716.9EdqCTGC.jpg",
-    "src": "src/content/images/517355716.jpg"
-  },
-  "src/content/images/IMG_0013.jpg": {
-    "file": "_app/immutable/assets/IMG_0013.B-dilVNP.jpg",
-    "src": "src/content/images/IMG_0013.jpg"
-  },
-  "src/content/images/IMG_0036.jpg": {
-    "file": "_app/immutable/assets/IMG_0036.BUndmE3Z.jpg",
-    "src": "src/content/images/IMG_0036.jpg"
-  },
-  "src/content/images/IMG_0542.jpg": {
-    "file": "_app/immutable/assets/IMG_0542.B-6eQK1Y.jpg",
-    "src": "src/content/images/IMG_0542.jpg"
-  },
-  "src/content/images/IMG_20251107_205325_165.jpg": {
-    "file": "_app/immutable/assets/IMG_20251107_205325_165.BVSc4cG5.jpg",
-    "src": "src/content/images/IMG_20251107_205325_165.jpg"
-  },
-  "src/content/images/IMG_9555.jpg": {
-    "file": "_app/immutable/assets/IMG_9555.DpJKibvk.jpg",
-    "src": "src/content/images/IMG_9555.jpg"
-  },
-  "src/content/images/IMG_9884.jpg": {
-    "file": "_app/immutable/assets/IMG_9884.BncWTysN.jpg",
-    "src": "src/content/images/IMG_9884.jpg"
-  },
-  "src/content/images/PXL_20220404_221001861.jpg": {
-    "file": "_app/immutable/assets/PXL_20220404_221001861.Dym6yvyG.jpg",
-    "src": "src/content/images/PXL_20220404_221001861.jpg"
-  },
-  "src/content/images/PXL_20220626_030332663.NIGHT.jpg": {
-    "file": "_app/immutable/assets/PXL_20220626_030332663.NIGHT.D8TRLHaL.jpg",
-    "src": "src/content/images/PXL_20220626_030332663.NIGHT.jpg"
-  },
-  "src/content/images/PXL_20220918_221838148.PORTRAIT.jpg": {
-    "file": "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.DE_AqHb6.jpg",
-    "src": "src/content/images/PXL_20220918_221838148.PORTRAIT.jpg"
-  },
-  "src/content/images/PXL_20221009_195927011.jpg": {
-    "file": "_app/immutable/assets/PXL_20221009_195927011.tdkm_-Ng.jpg",
-    "src": "src/content/images/PXL_20221009_195927011.jpg"
-  },
-  "src/content/images/PXL_20230719_022112889.NIGHT.jpg": {
-    "file": "_app/immutable/assets/PXL_20230719_022112889.NIGHT.Djq8aOZj.jpg",
-    "src": "src/content/images/PXL_20230719_022112889.NIGHT.jpg"
-  },
-  "src/content/images/PXL_20230720_033605781.NIGHT~2.jpg": {
-    "file": "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.Zp74VoDg.jpg",
-    "src": "src/content/images/PXL_20230720_033605781.NIGHT~2.jpg"
-  },
-  "src/content/images/PXL_20240414_234010698.jpg": {
-    "file": "_app/immutable/assets/PXL_20240414_234010698.CpDP_0uQ.jpg",
-    "src": "src/content/images/PXL_20240414_234010698.jpg"
-  },
-  "src/content/images/PXL_20240514_232351202.PORTRAIT.jpg": {
-    "file": "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.dK7tbIjC.jpg",
-    "src": "src/content/images/PXL_20240514_232351202.PORTRAIT.jpg"
-  },
-  "src/content/images/PXL_20240514_232408454.PORTRAIT.ORIGINAL.jpg": {
-    "file": "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.B-RAy2I9.jpg",
-    "src": "src/content/images/PXL_20240514_232408454.PORTRAIT.ORIGINAL.jpg"
-  },
-  "src/content/images/PXL_20250001.jpg": {
-    "file": "_app/immutable/assets/PXL_20250001.BjVpW9Z0.jpg",
-    "src": "src/content/images/PXL_20250001.jpg"
-  },
-  "src/content/images/PXL_20250311_221838769.jpg": {
-    "file": "_app/immutable/assets/PXL_20250311_221838769.DdMm3mkz.jpg",
-    "src": "src/content/images/PXL_20250311_221838769.jpg"
-  },
-  "src/content/images/PXL_20250829_235850782.jpg": {
-    "file": "_app/immutable/assets/PXL_20250829_235850782.BA54zDb6.jpg",
-    "src": "src/content/images/PXL_20250829_235850782.jpg"
-  },
-  "src/content/images/PXL_20251031_221431315.jpg": {
-    "file": "_app/immutable/assets/PXL_20251031_221431315.C8Pkmc-v.jpg",
-    "src": "src/content/images/PXL_20251031_221431315.jpg"
-  },
-  "src/content/images/PXL_20251103_220514644~2.jpg": {
-    "file": "_app/immutable/assets/PXL_20251103_220514644~2.Dn43ijo-.jpg",
-    "src": "src/content/images/PXL_20251103_220514644~2.jpg"
-  },
-  "src/content/images/PXL_20251106_012413214.jpg": {
-    "file": "_app/immutable/assets/PXL_20251106_012413214.O3kQY4Qu.jpg",
-    "src": "src/content/images/PXL_20251106_012413214.jpg"
-  },
-  "src/content/images/PXL_20251114_010033442.jpg": {
-    "file": "_app/immutable/assets/PXL_20251114_010033442.7i-Evx-G.jpg",
-    "src": "src/content/images/PXL_20251114_010033442.jpg"
-  },
-  "src/content/images/_MG_0564.jpg": {
-    "file": "_app/immutable/assets/_MG_0564.CuRljals.jpg",
-    "src": "src/content/images/_MG_0564.jpg"
-  },
-  "src/content/images/_MG_0577.jpg": {
-    "file": "_app/immutable/assets/_MG_0577.5Ph4-yEo.jpg",
-    "src": "src/content/images/_MG_0577.jpg"
-  },
-  "src/content/images/space.jpg": {
-    "file": "_app/immutable/assets/space.B7veovbH.jpg",
-    "src": "src/content/images/space.jpg"
-  },
-  "src/content/images/unity.jpg": {
-    "file": "_app/immutable/assets/unity.DaJEl71o.jpg",
-    "src": "src/content/images/unity.jpg"
-  },
   "src/hooks.server.ts": {
     "file": "chunks/hooks.server.js",
     "name": "hooks.server",
@@ -566,36 +458,7 @@
     "file": "entries/pages/pics/_page.ts.js",
     "name": "entries/pages/pics/_page.ts",
     "src": "src/routes/pics/+page.ts",
-    "isEntry": true,
-    "assets": [
-      "_app/immutable/assets/517355716.9EdqCTGC.jpg",
-      "_app/immutable/assets/IMG_0013.B-dilVNP.jpg",
-      "_app/immutable/assets/IMG_0036.BUndmE3Z.jpg",
-      "_app/immutable/assets/IMG_0542.B-6eQK1Y.jpg",
-      "_app/immutable/assets/IMG_20251107_205325_165.BVSc4cG5.jpg",
-      "_app/immutable/assets/IMG_9555.DpJKibvk.jpg",
-      "_app/immutable/assets/IMG_9884.BncWTysN.jpg",
-      "_app/immutable/assets/PXL_20220404_221001861.Dym6yvyG.jpg",
-      "_app/immutable/assets/PXL_20220626_030332663.NIGHT.D8TRLHaL.jpg",
-      "_app/immutable/assets/PXL_20220918_221838148.PORTRAIT.DE_AqHb6.jpg",
-      "_app/immutable/assets/PXL_20221009_195927011.tdkm_-Ng.jpg",
-      "_app/immutable/assets/PXL_20230719_022112889.NIGHT.Djq8aOZj.jpg",
-      "_app/immutable/assets/PXL_20230720_033605781.NIGHT~2.Zp74VoDg.jpg",
-      "_app/immutable/assets/PXL_20240414_234010698.CpDP_0uQ.jpg",
-      "_app/immutable/assets/PXL_20240514_232351202.PORTRAIT.dK7tbIjC.jpg",
-      "_app/immutable/assets/PXL_20240514_232408454.PORTRAIT.ORIGINAL.B-RAy2I9.jpg",
-      "_app/immutable/assets/PXL_20250001.BjVpW9Z0.jpg",
-      "_app/immutable/assets/PXL_20250311_221838769.DdMm3mkz.jpg",
-      "_app/immutable/assets/PXL_20250829_235850782.BA54zDb6.jpg",
-      "_app/immutable/assets/PXL_20251031_221431315.C8Pkmc-v.jpg",
-      "_app/immutable/assets/PXL_20251103_220514644~2.Dn43ijo-.jpg",
-      "_app/immutable/assets/PXL_20251106_012413214.O3kQY4Qu.jpg",
-      "_app/immutable/assets/PXL_20251114_010033442.7i-Evx-G.jpg",
-      "_app/immutable/assets/_MG_0564.CuRljals.jpg",
-      "_app/immutable/assets/_MG_0577.5Ph4-yEo.jpg",
-      "_app/immutable/assets/space.B7veovbH.jpg",
-      "_app/immutable/assets/unity.DaJEl71o.jpg"
-    ]
+    "isEntry": true
   },
   "src/routes/poetry/+page.server.ts": {
     "file": "entries/pages/poetry/_page.server.ts.js",
@@ -648,63 +511,6 @@
     "file": "entries/endpoints/poetry/rss.xml/_server.ts.js",
     "name": "entries/endpoints/poetry/rss.xml/_server.ts",
     "src": "src/routes/poetry/rss.xml/+server.ts",
-    "isEntry": true,
-    "imports": [
-      "_common.js",
-      "_posts.js"
-    ]
-  },
-  "src/routes/posts/+page.server.ts": {
-    "file": "entries/pages/posts/_page.server.ts.js",
-    "name": "entries/pages/posts/_page.server.ts",
-    "src": "src/routes/posts/+page.server.ts",
-    "isEntry": true,
-    "imports": [
-      "_posts.js",
-      "_pagemeta.js"
-    ]
-  },
-  "src/routes/posts/+page.svelte": {
-    "file": "entries/pages/posts/_page.svelte.js",
-    "name": "entries/pages/posts/_page.svelte",
-    "src": "src/routes/posts/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index2.js",
-      "_date.js",
-      "_PostTags.js"
-    ]
-  },
-  "src/routes/posts/[slug]/+page.svelte": {
-    "file": "entries/pages/posts/_slug_/_page.svelte.js",
-    "name": "entries/pages/posts/_slug_/_page.svelte",
-    "src": "src/routes/posts/[slug]/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index2.js",
-      "_date.js",
-      "_SlabTitle.js",
-      "_PostTags.js",
-      "_index3.js"
-    ],
-    "css": [
-      "_app/immutable/assets/content.B7H8doqR.css"
-    ]
-  },
-  "src/routes/posts/[slug]/+page.ts": {
-    "file": "entries/pages/posts/_slug_/_page.ts.js",
-    "name": "entries/pages/posts/_slug_/_page.ts",
-    "src": "src/routes/posts/[slug]/+page.ts",
-    "isEntry": true,
-    "imports": [
-      "_posts.js",
-      "_pagemeta.js"
-    ]
-  },
-  "src/routes/posts/rss.xml/+server.ts": {
-    "file": "entries/endpoints/posts/rss.xml/_server.ts.js",
-    "name": "entries/endpoints/posts/rss.xml/_server.ts",
-    "src": "src/routes/posts/rss.xml/+server.ts",
     "isEntry": true,
     "imports": [
       "_common.js",
