@@ -23,7 +23,7 @@
 		"@neoconfetti/svelte": "^2.2.2",
 		"@shikijs/colorized-brackets": "^3.20.0",
 		"@shikijs/transformers": "^3.20.0",
-		"@sveltejs/adapter-cloudflare": "^7.2.4",
+		"@sveltejs/adapter-vercel": "^6.3.0",
 		"@sveltejs/enhanced-img": "^0.9.2",
 		"@sveltejs/kit": "^2.49.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
@@ -62,7 +62,6 @@
 		"typescript-eslint": "^8.50.1",
 		"vite": "^6.4.1",
 		"vite-plugin-devtools-json": "^1.0.0",
-		"wrangler": "4.43.0",
 		"yaml": "^2.8.2"
 	},
 	"dependencies": {

@@ -1,5 +1,5 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-vercel';
 import { escapeSvelte, mdsvex } from 'mdsvex';
 import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
@@ -105,9 +105,8 @@ const mdsvexOptions = {
 			const safeLang = escapeHtml(highlightLang);
 			const safeFile = file ? escapeHtml(file) : '';
 			const showLang = highlightLang && highlightLang !== 'text';
-			const copyButton = (floating = false) => `<button type="button" class="code-block__copy${
-				floating ? ' code-block__copy--floating' : ''
-			}" aria-label="Copy code" data-code="${encoded}">
+			const copyButton = (floating = false) => `<button type="button" class="code-block__copy${floating ? ' code-block__copy--floating' : ''
+				}" aria-label="Copy code" data-code="${encoded}">
 				<svg class="icon-copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 					<rect x="9" y="9" width="13" height="13" rx="2"></rect>
 					<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -118,9 +117,8 @@ const mdsvexOptions = {
 				<span class="sr-only">Copy code</span>
 			</button>`;
 
-			const block = `<figure class="code-block" data-codeblock data-lang="${safeLang}"${
-				file ? ` data-file="${safeFile}"` : ''
-			}>
+			const block = `<figure class="code-block" data-codeblock data-lang="${safeLang}"${file ? ` data-file="${safeFile}"` : ''
+				}>
 		${file ? `<figcaption class="code-block__caption" title="${safeFile}">${safeFile}</figcaption>` : ''}
 		<div class="code-block__body${showLang ? '' : ' code-block__body--nolabel'}">
 			${copyButton(true)}
