@@ -900,7 +900,7 @@ const options = {
   service_worker: false,
   service_worker_options: void 0,
   templates: {
-    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html\n	lang="en"\n	class="bg-base font-jetbrains-mono text-text selection:bg-accent/30 selection:text-accent/80 caret-accent scrollbar min-h-screen"\n>\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets + `/favicon.svg" />
+    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html lang="en" class="bg-base text-text selection:bg-accent/30 selection:text-accent/80 caret-accent scrollbar min-h-screen">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets + `/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta property="og:locale" content="en_US" />
 
@@ -1008,7 +1008,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1np3cqd"
+  version_hash: "1cjoiop"
 };
 async function get_hooks() {
   let handle;

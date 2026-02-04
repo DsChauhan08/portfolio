@@ -225,22 +225,6 @@
     "src": "content/poetry/first-poem/+page.svx",
     "isDynamicEntry": true
   },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-400-normal.6-qcROiO.woff",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff"
-  },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-400-normal.V6pRDFza.woff2",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2"
-  },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-700-normal.D3wTyLJW.woff",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff"
-  },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-700-normal.BYuf6tUa.woff2",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2"
-  },
   "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
     "file": "remote-entry.js",
     "name": "remote-entry",
@@ -322,13 +306,7 @@
       "_html.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.CLE6CC2X.css"
-    ],
-    "assets": [
-      "_app/immutable/assets/jetbrains-mono-latin-400-normal.V6pRDFza.woff2",
-      "_app/immutable/assets/jetbrains-mono-latin-400-normal.6-qcROiO.woff",
-      "_app/immutable/assets/jetbrains-mono-latin-700-normal.BYuf6tUa.woff2",
-      "_app/immutable/assets/jetbrains-mono-latin-700-normal.D3wTyLJW.woff"
+      "_app/immutable/assets/_layout.BToM-QLu.css"
     ]
   },
   "src/routes/+page.server.ts": {
