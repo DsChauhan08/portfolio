@@ -1,4 +1,4 @@
-import { $ as attr, _ as ensure_array_like, a2 as attr_class, a4 as attr_style, a0 as escape_html } from "./index2.js";
+import { a4 as attr, a3 as ensure_array_like, a7 as attr_class, a9 as attr_style, a5 as escape_html } from "./index2.js";
 function SlabTitle($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { title, slug, href, config, hash } = $$props;

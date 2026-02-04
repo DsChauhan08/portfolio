@@ -1,4 +1,4 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, a6 as head, $ as attr, a4 as attr_style, a5 as stringify, a0 as escape_html, _ as ensure_array_like } from "../../../../chunks/index2.js";
+import { a0 as sanitize_props, a1 as spread_props, a2 as slot, ab as head, a4 as attr, a9 as attr_style, aa as stringify, a5 as escape_html, a3 as ensure_array_like } from "../../../../chunks/index2.js";
 import { p as page } from "../../../../chunks/index3.js";
 import { f as formatDate } from "../../../../chunks/date.js";
 import { b as getIconByName } from "../../../../chunks/projects.js";
@@ -11,13 +11,13 @@ function Calendar_event($$renderer, $$props) {
     [
       "path",
       {
-        "d": "M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+        "d": "M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12"
       }
     ],
     ["path", { "d": "M16 3l0 4" }],
     ["path", { "d": "M8 3l0 4" }],
     ["path", { "d": "M4 11l16 0" }],
-    ["path", { "d": "M8 15h2v2h-2z" }]
+    ["path", { "d": "M8 15h2v2h-2l0 -2" }]
   ];
   Icon($$renderer, spread_props([
     { type: "outline", name: "calendar-event" },
@@ -93,7 +93,7 @@ function _page($$renderer, $$props) {
         let link = each_array[$$index];
         const Icon2 = getIconByName(link.icon || (link.text.toLowerCase().includes("github") ? "github" : "external"));
         $$renderer2.push(`<a${attr("href", link.url)}${attr("title", link.text)} target="_blank" rel="noopener noreferrer" class="group hover:text-accent flex items-center gap-1.5 transition-colors"><!---->`);
-        Icon2($$renderer2, {
+        Icon2?.($$renderer2, {
           size: 16,
           class: "transition-transform duration-200 group-hover:scale-120"
         });
@@ -106,7 +106,7 @@ function _page($$renderer, $$props) {
     $$renderer2.push(`<!--]--></div> <div class="text-subtext0 mt-2 flex items-center gap-x-2 text-sm">`);
     ProjectTags($$renderer2, { project: data });
     $$renderer2.push(`<!----></div></header> <hr class="border-surface1 mb-8"/> <!---->`);
-    Content($$renderer2, {});
+    Content?.($$renderer2, {});
     $$renderer2.push(`<!----></article>`);
   });
 }

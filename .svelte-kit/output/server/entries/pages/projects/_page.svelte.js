@@ -1,4 +1,4 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, a6 as head, _ as ensure_array_like, $ as attr, a4 as attr_style, a5 as stringify, a0 as escape_html } from "../../../chunks/index2.js";
+import { a0 as sanitize_props, a1 as spread_props, a2 as slot, ab as head, a3 as ensure_array_like, a4 as attr, a9 as attr_style, aa as stringify, a5 as escape_html } from "../../../chunks/index2.js";
 import { f as formatDate } from "../../../chunks/date.js";
 import { P as ProjectTags } from "../../../chunks/ProjectTags.js";
 import { I as Icon } from "../../../chunks/Icon.js";

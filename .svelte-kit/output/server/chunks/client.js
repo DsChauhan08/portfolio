@@ -1,5 +1,5 @@
 import "clsx";
-import { aa as noop } from "./index2.js";
+import { af as noop } from "./index2.js";
 import "@sveltejs/kit/internal/server";
 import "@sveltejs/kit/internal";
 import "./exports.js";
