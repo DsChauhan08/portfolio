@@ -3,7 +3,7 @@ import { h as html } from "./html.js";
 import { c as createContentService } from "./factory.js";
 import { E as External_link } from "./external-link.js";
 import { C as Code } from "./code.js";
-import { X as sanitize_props, Y as spread_props, Z as slot } from "./index2.js";
+import { a0 as sanitize_props, a1 as spread_props, a2 as slot } from "./index2.js";
 import { I as Icon } from "./Icon.js";
 import { B as Brand_github } from "./brand-github.js";
 function File_text($$renderer, $$props) {
@@ -13,7 +13,7 @@ function File_text($$renderer, $$props) {
     [
       "path",
       {
-        "d": "M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+        "d": "M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2"
       }
     ],
     ["path", { "d": "M9 9l1 0" }],

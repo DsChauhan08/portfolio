@@ -1,4 +1,4 @@
-import { H as HYDRATION_ERROR, C as COMMENT_NODE, a as HYDRATION_END, g as get_next_sibling, b as HYDRATION_START, c as HYDRATION_START_ELSE, e as effect_tracking, d as get, s as source, r as render_effect, u as untrack, i as increment, q as queue_micro_task, f as active_effect, h as block, j as branch, B as Batch, p as pause_effect, k as create_text, l as set_active_effect, m as set_active_reaction, n as set_component_context, o as handle_error, t as active_reaction, v as component_context, w as move_effect, x as internal_set, y as destroy_effect, z as invoke_error_boundary, A as svelte_boundary_reset_onerror, E as EFFECT_TRANSPARENT, D as EFFECT_PRESERVED, F as BOUNDARY_EFFECT, G as define_property, I as init_operations, J as get_first_child, K as hydration_failed, L as clear_text_content, M as array_from, N as component_root, O as is_passive_event, P as push, Q as pop, R as set, S as LEGACY_PROPS, T as flushSync, U as mutable_source, V as render, W as setContext } from "./index2.js";
+import { H as HYDRATION_ERROR, C as COMMENT_NODE, a as HYDRATION_END, g as get_next_sibling, b as HYDRATION_START, c as HYDRATION_START_ELSE, e as effect_tracking, d as get, r as render_effect, s as source, u as untrack, i as increment, q as queue_micro_task, f as active_effect, h as block, j as branch, B as Batch, p as pause_effect, k as create_text, l as defer_effect, m as set_active_effect, n as set_active_reaction, o as set_component_context, t as handle_error, v as active_reaction, w as component_context, x as move_effect, y as set_signal_status, D as DIRTY, z as schedule_effect, M as MAYBE_DIRTY, A as internal_set, E as destroy_effect, F as invoke_error_boundary, G as svelte_boundary_reset_onerror, I as EFFECT_TRANSPARENT, J as EFFECT_PRESERVED, K as BOUNDARY_EFFECT, L as define_property, N as init_operations, O as get_first_child, P as hydration_failed, Q as clear_text_content, R as array_from, S as component_root, T as is_passive_event, U as push, V as pop, W as set, X as LEGACY_PROPS, Y as flushSync, Z as mutable_source, _ as render, $ as setContext } from "./index2.js";
 import "clsx";
 import "./environment.js";
 let public_env = {};
@@ -100,7 +100,7 @@ function boundary(node, props, children) {
 class Boundary {
   /** @type {Boundary | null} */
   parent;
-  #pending = false;
+  is_pending = false;
   /** @type {TemplateNode} */
   #anchor;
   /** @type {TemplateNode | null} */
@@ -123,7 +123,12 @@ class Boundary {
   #pending_anchor = null;
   #local_pending_count = 0;
   #pending_count = 0;
+  #pending_count_update_queued = false;
   #is_creating_fallback = false;
+  /** @type {Set<Effect>} */
+  #dirty_effects = /* @__PURE__ */ new Set();
+  /** @type {Set<Effect>} */
+  #maybe_dirty_effects = /* @__PURE__ */ new Set();
   /**
    * A source containing the number of pending async deriveds/expressions.
    * Only created if `$effect.pending()` is used inside the boundary,
@@ -149,7 +154,7 @@ class Boundary {
     this.#children = children;
     this.parent = /** @type {Effect} */
     active_effect.b;
-    this.#pending = !!this.#props.pending;
+    this.is_pending = !!this.#props.pending;
     this.#effect = block(() => {
       active_effect.b = this;
       if (hydrating) {
@@ -164,6 +169,9 @@ class Boundary {
           this.#hydrate_pending_content();
         } else {
           this.#hydrate_resolved_content();
+          if (this.#pending_count === 0) {
+            this.is_pending = false;
+          }
         }
       } else {
         var anchor = this.#get_anchor();
@@ -175,7 +183,7 @@ class Boundary {
         if (this.#pending_count > 0) {
           this.#show_pending_snippet();
         } else {
-          this.#pending = false;
+          this.is_pending = false;
         }
       }
       return () => {
@@ -192,15 +200,12 @@ class Boundary {
     } catch (error) {
       this.error(error);
     }
-    this.#pending = false;
   }
   #hydrate_pending_content() {
     const pending = this.#props.pending;
-    if (!pending) {
-      return;
-    }
+    if (!pending) return;
     this.#pending_effect = branch(() => pending(this.#anchor));
-    Batch.enqueue(() => {
+    queue_micro_task(() => {
       var anchor = this.#get_anchor();
       this.#main_effect = this.#run(() => {
         Batch.ensure();
@@ -216,13 +221,13 @@ class Boundary {
             this.#pending_effect = null;
           }
         );
-        this.#pending = false;
+        this.is_pending = false;
       }
     });
   }
   #get_anchor() {
     var anchor = this.#anchor;
-    if (this.#pending) {
+    if (this.is_pending) {
       this.#pending_anchor = create_text();
       this.#anchor.before(this.#pending_anchor);
       anchor = this.#pending_anchor;
@@ -230,11 +235,18 @@ class Boundary {
     return anchor;
   }
   /**
-   * Returns `true` if the effect exists inside a boundary whose pending snippet is shown
+   * Defer an effect inside a pending boundary until the boundary resolves
+   * @param {Effect} effect
+   */
+  defer_effect(effect) {
+    defer_effect(effect, this.#dirty_effects, this.#maybe_dirty_effects);
+  }
+  /**
+   * Returns `false` if the effect exists inside a boundary whose pending snippet is shown
    * @returns {boolean}
    */
-  is_pending() {
-    return this.#pending || !!this.parent && this.parent.is_pending();
+  is_rendered() {
+    return !this.is_pending && (!this.parent || this.parent.is_rendered());
   }
   has_pending_snippet() {
     return !!this.#props.pending;
@@ -291,7 +303,17 @@ class Boundary {
     }
     this.#pending_count += d;
     if (this.#pending_count === 0) {
-      this.#pending = false;
+      this.is_pending = false;
+      for (const e of this.#dirty_effects) {
+        set_signal_status(e, DIRTY);
+        schedule_effect(e);
+      }
+      for (const e of this.#maybe_dirty_effects) {
+        set_signal_status(e, MAYBE_DIRTY);
+        schedule_effect(e);
+      }
+      this.#dirty_effects.clear();
+      this.#maybe_dirty_effects.clear();
       if (this.#pending_effect) {
         pause_effect(this.#pending_effect, () => {
           this.#pending_effect = null;
@@ -312,9 +334,14 @@ class Boundary {
   update_pending_count(d) {
     this.#update_pending_count(d);
     this.#local_pending_count += d;
-    if (this.#effect_pending) {
-      internal_set(this.#effect_pending, this.#local_pending_count);
-    }
+    if (!this.#effect_pending || this.#pending_count_update_queued) return;
+    this.#pending_count_update_queued = true;
+    queue_micro_task(() => {
+      this.#pending_count_update_queued = false;
+      if (this.#effect_pending) {
+        internal_set(this.#effect_pending, this.#local_pending_count);
+      }
+    });
   }
   get_effect_pending() {
     this.#effect_pending_subscriber();
@@ -368,7 +395,7 @@ class Boundary {
           this.#failed_effect = null;
         });
       }
-      this.#pending = this.has_pending_snippet();
+      this.is_pending = this.has_pending_snippet();
       this.#main_effect = this.#run(() => {
         this.#is_creating_fallback = false;
         return branch(() => this.#children(this.#anchor));
@@ -376,22 +403,18 @@ class Boundary {
       if (this.#pending_count > 0) {
         this.#show_pending_snippet();
       } else {
-        this.#pending = false;
+        this.is_pending = false;
       }
     };
-    var previous_reaction = active_reaction;
-    try {
-      set_active_reaction(null);
-      calling_on_error = true;
-      onerror?.(error, reset);
-      calling_on_error = false;
-    } catch (error2) {
-      invoke_error_boundary(error2, this.#effect && this.#effect.parent);
-    } finally {
-      set_active_reaction(previous_reaction);
-    }
-    if (failed) {
-      queue_micro_task(() => {
+    queue_micro_task(() => {
+      try {
+        calling_on_error = true;
+        onerror?.(error, reset);
+        calling_on_error = false;
+      } catch (error2) {
+        invoke_error_boundary(error2, this.#effect && this.#effect.parent);
+      }
+      if (failed) {
         this.#failed_effect = this.#run(() => {
           Batch.ensure();
           this.#is_creating_fallback = true;
@@ -414,8 +437,8 @@ class Boundary {
             this.#is_creating_fallback = false;
           }
         });
-      });
-    }
+      }
+    });
   }
 }
 const all_registered_events = /* @__PURE__ */ new Set();
@@ -833,13 +856,13 @@ function Root($$renderer, $$props) {
       $$renderer2.push("<!--[-->");
       const Pyramid_0 = constructors[0];
       $$renderer2.push(`<!---->`);
-      Pyramid_0($$renderer2, {
+      Pyramid_0?.($$renderer2, {
         data: data_0,
         form,
         params: page.params,
         children: ($$renderer3) => {
           $$renderer3.push(`<!---->`);
-          Pyramid_1($$renderer3, { data: data_1, form, params: page.params });
+          Pyramid_1?.($$renderer3, { data: data_1, form, params: page.params });
           $$renderer3.push(`<!---->`);
         },
         $$slots: { default: true }
@@ -849,7 +872,7 @@ function Root($$renderer, $$props) {
       $$renderer2.push("<!--[!-->");
       const Pyramid_0 = constructors[0];
       $$renderer2.push(`<!---->`);
-      Pyramid_0($$renderer2, { data: data_0, form, params: page.params });
+      Pyramid_0?.($$renderer2, { data: data_0, form, params: page.params });
       $$renderer2.push(`<!---->`);
     }
     $$renderer2.push(`<!--]--> `);
@@ -985,7 +1008,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1lwxaql"
+  version_hash: "1np3cqd"
 };
 async function get_hooks() {
   let handle;
@@ -993,7 +1016,7 @@ async function get_hooks() {
   let handleError;
   let handleValidationError;
   let init;
-  ({ handle, handleFetch, handleError, handleValidationError, init } = await import("./hooks.server.js"));
+  ({ handle, handleFetch, handleError, handleValidationError, init } = await import("../entries/hooks.server.js"));
   let reroute;
   let transport;
   return {

@@ -1,5 +1,4 @@
-import { B as BROWSER } from "../../../chunks/false.js";
-const dev = BROWSER;
+import { d as dev } from "../../../chunks/false.js";
 const csr = dev;
 const prerender = true;
 export {

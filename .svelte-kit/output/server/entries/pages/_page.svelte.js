@@ -1,4 +1,4 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, $ as attr, a2 as attr_class, a0 as escape_html, _ as ensure_array_like, a4 as attr_style, a5 as stringify } from "../../chunks/index2.js";
+import { a0 as sanitize_props, a1 as spread_props, a2 as slot, a4 as attr, a7 as attr_class, a5 as escape_html, a3 as ensure_array_like, a9 as attr_style, aa as stringify } from "../../chunks/index2.js";
 import { P as ProjectTags } from "../../chunks/ProjectTags.js";
 import { I as Icon } from "../../chunks/Icon.js";
 import { S as Site, K as Kaggle, H as HuggingFace } from "../../chunks/common.js";
@@ -64,7 +64,7 @@ function Star($$renderer, $$props) {
     [
       "path",
       {
-        "d": "M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+        "d": "M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
       }
     ]
   ];
@@ -91,7 +91,7 @@ function LinkWithIcon($$renderer, $$props) {
     $$renderer.push("<!--[-->");
     const IconComponent = icon;
     $$renderer.push(`<!---->`);
-    IconComponent($$renderer, { size: 18, stroke: 1.5, class: "shrink-0" });
+    IconComponent?.($$renderer, { size: 18, stroke: 1.5, class: "shrink-0" });
     $$renderer.push(`<!---->`);
   } else {
     $$renderer.push("<!--[!-->");

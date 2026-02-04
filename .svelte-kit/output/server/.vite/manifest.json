@@ -268,9 +268,10 @@
     ]
   },
   "src/hooks.server.ts": {
-    "file": "chunks/hooks.server.js",
-    "name": "hooks.server",
+    "file": "entries/hooks.server.js",
+    "name": "entries/hooks.server",
     "src": "src/hooks.server.ts",
+    "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_common.js"
