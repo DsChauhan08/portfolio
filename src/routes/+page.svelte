@@ -62,7 +62,7 @@
 	</section>
 
 	<!-- Featured Projects -->
-	<Featured projects={data.featuredProjects} maxProjects={3} />
+	<Featured projects={data.featuredProjects} maxProjects={6} />
 
 	<!-- Two Column: Poetry & Philosophy -->
 	<section class="grid gap-6 md:grid-cols-2">

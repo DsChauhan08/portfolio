@@ -1,10 +1,10 @@
 ~~~
 title = "Qwen2.5-3B-Finance-GGUF"
-description = "Fine-tuned LLM for finance domain in GGUF format"
+description = "SLM finance model in GGUF format for edge inference and small-device pipelines"
 date = "2026-01-01"
 published = true
 featured = true
-tags = ["llm", "huggingface", "fine-tuning", "python", "ai", "finance"]
+tags = ["slm", "llm", "finance", "huggingface", "gguf", "edge-ai", "inference"]
 
 [[links]]
 text = "HuggingFace"
@@ -17,19 +17,24 @@ url = "https://github.com/DsChauhan08/Qwen2.5-3B-Finance-GGUF"
 
 # Qwen2.5-3B-Finance-GGUF
 
-A fine-tuned version of Qwen2.5-3B optimized for finance domain tasks, converted to GGUF format for efficient local inference.
+Qwen2.5-3B-Finance-GGUF is a finance-specialized small language model packaged for practical local deployment.
 
 ## What it does
 
-Specialized for financial text understanding, analysis, and generation. Runs locally without cloud dependencies.
+It handles finance-oriented language tasks—analysis, summarization, and reasoning—while remaining lightweight enough for constrained environments.
 
-## Features
+## Why GGUF
 
-- Finance domain knowledge
-- GGUF format for llama.cpp compatibility
-- Runs on consumer hardware
-- No API costs
+- Optimized for `llama.cpp`-style runtimes
+- Easy to run in local and offline setups
+- Good fit for embedded or low-resource inference paths
+
+## Deployment profile
+
+- Designed for **small-device pipelines** and edge workflows
+- Reduces dependency on cloud APIs for sensitive finance use cases
+- Suitable for automation chains where low latency and predictable cost matter
 
 ## Training
 
-Fine-tuned using QLoRA on curated financial datasets.
+Fine-tuned with domain-focused finance data and exported in GGUF format for production-friendly inference.

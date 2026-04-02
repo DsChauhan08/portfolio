@@ -1,0 +1,31 @@
+~~~
+title = "easycopy"
+description = "Turn any GitHub repo into a single static HTML page for humans and LLM context"
+date = "2026-03-31"
+published = true
+featured = true
+tags = ["typescript", "developer-tools", "github", "llm", "mcp", "documentation"]
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/easycopy"
+~~~
+
+# easycopy
+
+easycopy converts any GitHub repository into one clean static HTML document, optimized for quick reading by humans and high-signal context ingestion by LLMs.
+
+## Problem
+
+Large repositories are hard to scan quickly. Important details are fragmented across folders, READMEs, and code files. This slows down onboarding, review, and AI-assisted development.
+
+## Solution
+
+- Generates a single consolidated HTML view of a repo
+- Makes structure and key files easier to parse in one pass
+- Helps teams share "repo snapshots" without requiring IDE setup
+- Includes MCP support so AI tools can reason over bigger codebases with lower friction
+
+## Why it matters
+
+easycopy reduces the time between "I found a repo" and "I understand this repo." It's built for engineers, reviewers, and AI workflows that need clarity fast.

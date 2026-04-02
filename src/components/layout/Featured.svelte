@@ -38,26 +38,26 @@
 			</a>
 		</div>
 
-		<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+		<div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
 			{#each displayProjects as project (project.slug)}
 				<a
 					href={`/projects/${project.slug}`}
-					class="border-surface0 bg-base hover:border-accent focus-visible:border-accent group block overflow-hidden rounded-xl border shadow-lg transition-all duration-300 hover:shadow-xl focus:outline-none"
+					class="border-surface0 bg-base hover:border-accent focus-visible:border-accent group block overflow-hidden rounded-xl border shadow-md transition-all duration-300 hover:shadow-lg focus:outline-none"
 				>
 					{#if project.metadata.image}
 						<div class="overflow-hidden">
 							<img
 								src={project.metadata.image.url}
 								alt={project.metadata.image.alt}
-								class="aspect-video w-full transition-transform duration-300 group-hover:scale-105"
+								class="aspect-video w-full transition-transform duration-300 group-hover:scale-[1.03]"
 								style:view-transition-name="project-img-{project.slug}"
 							/>
 						</div>
 					{/if}
 
-					<div class="space-y-3 p-5">
+					<div class="space-y-2.5 p-4">
 						<h3
-							class="text-text group-hover:text-accent text-xl font-semibold transition-colors"
+							class="text-text group-hover:text-accent text-lg font-semibold transition-colors"
 							style:view-transition-name="project-title-{project.slug}"
 						>
 							{project.metadata.title}

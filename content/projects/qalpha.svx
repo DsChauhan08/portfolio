@@ -1,0 +1,31 @@
+~~~
+title = "qalpha"
+description = "Quantitative research and execution suite focused on sustained market outperformance"
+date = "2026-03-28"
+published = true
+featured = true
+tags = ["quant", "finance", "trading", "python", "research", "analytics"]
+~~~
+
+# qalpha
+
+qalpha is a quantitative strategy suite built to research, test, and execute market signals with disciplined risk controls.
+
+## What it is
+
+An end-to-end quant workflow: from data ingestion and feature engineering to backtesting, portfolio construction, and live strategy monitoring.
+
+## What it focuses on
+
+- Signal discovery across structured market features
+- Robust backtests with realistic assumptions
+- Risk-aware allocation and exposure controls
+- Continuous performance monitoring and model iteration
+
+## Current performance
+
+The suite is currently delivering approximately **8% monthly outperformance** versus the benchmark being tracked.
+
+## Philosophy
+
+qalpha is built around repeatable process over one-off wins: hypothesis → test → deploy → monitor → refine.

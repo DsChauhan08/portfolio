@@ -1,0 +1,33 @@
+~~~
+title = "Synthetic Finance Data 3M"
+description = "Open-source synthetic finance dataset for training and evaluating AI models"
+date = "2026-03-27"
+published = true
+featured = true
+tags = ["dataset", "finance", "ai", "machine-learning", "huggingface", "open-source"]
+
+[[links]]
+text = "HuggingFace"
+url = "https://huggingface.co/datasets/dschauhan08/synthetic_finance_data_3m"
+~~~
+
+# Synthetic Finance Data 3M
+
+An open-source synthetic dataset created to help train and benchmark AI systems on finance-oriented tasks at meaningful scale.
+
+## Why this dataset exists
+
+Financial AI development is often bottlenecked by limited access to clean, reusable, and shareable data. This project offers a practical alternative: high-volume synthetic data designed for experimentation and model development.
+
+## Highlights
+
+- ~3M synthetic finance records for large-scale training loops
+- Built for supervised fine-tuning, evaluation, and pipeline testing
+- Useful for prototyping finance-specific language and prediction tasks
+- Published openly on Hugging Face for reproducible research
+
+## Use cases
+
+- Domain adaptation for financial language models
+- Stress-testing data pipelines and feature extractors
+- Benchmarking model quality before production data integration

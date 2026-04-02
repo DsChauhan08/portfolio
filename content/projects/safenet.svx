@@ -1,0 +1,30 @@
+~~~
+title = "SafeNet"
+description = "Case intelligence and workflow platform for police and cybercrime response teams"
+date = "2026-03-29"
+published = true
+featured = true
+tags = ["security", "cybersecurity", "case-management", "public-safety", "workflow", "non-open-source"]
+~~~
+
+# SafeNet
+
+**SafeNet** is a private operational platform designed for police departments and cyber cells to manage investigations with speed, traceability, and coordination.
+
+## Mission
+
+In high-pressure investigations, teams lose time to fragmented tools, disconnected updates, and manual handoffs. SafeNet centralizes the entire lifecycle of a case so responders can focus on outcomes, not paperwork.
+
+## Core capabilities
+
+- Unified case creation, assignment, and status tracking
+- Evidence and incident timeline organization for investigation clarity
+- Structured workflows for cyber complaints, escalations, and inter-team coordination
+- Audit-friendly records to improve accountability and reporting
+- Designed for operational environments where reliability and access control matter
+
+## Real-world value
+
+SafeNet helps agencies move from reactive case handling to systematic incident response. The goal is simple: faster resolution cycles, cleaner collaboration, and better visibility across every active case.
+
+> **Note:** This is a non-open-source project due to sensitive operational use cases.

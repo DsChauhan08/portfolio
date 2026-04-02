@@ -1,0 +1,31 @@
+~~~
+title = "sat-stream"
+description = "Practice SAT questions directly in the terminal with fast, focused study loops"
+date = "2026-03-30"
+published = true
+featured = true
+tags = ["python", "cli", "education", "sat", "terminal", "learning-tools"]
+
+[[links]]
+text = "GitHub"
+url = "https://github.com/DsChauhan08/sat-stream"
+~~~
+
+# sat-stream
+
+sat-stream brings SAT prep into the terminal: no tab-hopping, no distractions, just questions, timing, and momentum.
+
+## Why I built it
+
+Most SAT prep tools feel bloated. I wanted something that matches how focused practice actually works: quick reps, immediate feedback, and keyboard-first flow.
+
+## What it does
+
+- Serves SAT practice questions directly in your CLI
+- Keeps sessions short, repeatable, and easy to fit into daily routines
+- Reduces context switching so prep feels like deep work
+- Makes studying feel closer to coding sprints than classroom homework
+
+## Outcome
+
+sat-stream turned exam prep into a consistent daily ritual. If you already live in the terminal, this makes SAT practice feel natural.
