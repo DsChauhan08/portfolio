@@ -1,5 +1,5 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import staticAdapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
 import { escapeSvelte, mdsvex } from 'mdsvex';
 import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
@@ -180,14 +180,7 @@ const mdsvexOptions = {
 const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: staticAdapter({
-			fallback: 'index.html',
-			strict: false
-		}),
-		prerender: {
-			entries: [],
-			handleUnseenRoutes: 'ignore'
-		},
+		adapter: adapter(),
 		alias: {
 			$components: 'src/components',
 			$utils: 'src/lib/utils',

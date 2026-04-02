@@ -1,4 +1,4 @@
-import { a3 as ensure_array_like, a9 as attr_style, aa as stringify, a5 as escape_html, ad as bind_props } from "./index2.js";
+import { _ as ensure_array_like, a4 as attr_style, a0 as escape_html, a5 as stringify, a8 as bind_props } from "./index2.js";
 import { g as getRandomAccentColor } from "./theme.js";
 import { T as Tag } from "./date.js";
 function ProjectTags($$renderer, $$props) {

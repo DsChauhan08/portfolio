@@ -1,4 +1,4 @@
-import { ab as head, a5 as escape_html, a3 as ensure_array_like, a4 as attr } from "../../../chunks/index2.js";
+import { a6 as head, a0 as escape_html, _ as ensure_array_like, $ as attr } from "../../../chunks/index2.js";
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { data } = $$props;

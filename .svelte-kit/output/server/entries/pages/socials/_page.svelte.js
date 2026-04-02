@@ -1,4 +1,4 @@
-import { ab as head, a3 as ensure_array_like, a4 as attr, a5 as escape_html } from "../../../chunks/index2.js";
+import { a6 as head, _ as ensure_array_like, $ as attr, a0 as escape_html } from "../../../chunks/index2.js";
 import { a as Socials } from "../../../chunks/common.js";
 import { E as External_link } from "../../../chunks/external-link.js";
 function _page($$renderer, $$props) {

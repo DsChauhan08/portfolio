@@ -1,13 +1,16 @@
-import { a0 as sanitize_props, a1 as spread_props, a2 as slot } from "./index2.js";
+import { X as sanitize_props, Y as spread_props, Z as slot } from "./index2.js";
 import { I as Icon } from "./Icon.js";
 function Tag($$renderer, $$props) {
   const $$sanitized_props = sanitize_props($$props);
   const iconNode = [
-    ["path", { "d": "M6.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }],
+    [
+      "path",
+      { "d": "M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
+    ],
     [
       "path",
       {
-        "d": "M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3"
+        "d": "M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z"
       }
     ]
   ];

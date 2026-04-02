@@ -1,4 +1,4 @@
-import { ab as head, a4 as attr } from "../../../chunks/index2.js";
+import { a6 as head, $ as attr } from "../../../chunks/index2.js";
 import { M as Mail, S as Site } from "../../../chunks/common.js";
 import { B as Brain } from "../../../chunks/brain.js";
 import { C as Code } from "../../../chunks/code.js";

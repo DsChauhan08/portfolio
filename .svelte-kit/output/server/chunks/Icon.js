@@ -1,4 +1,4 @@
-import { a0 as sanitize_props, ah as rest_props, ai as fallback, aj as attributes, a3 as ensure_array_like, ak as element, a2 as slot, ad as bind_props } from "./index2.js";
+import { X as sanitize_props, ac as rest_props, ad as fallback, ae as attributes, _ as ensure_array_like, af as element, Z as slot, a8 as bind_props } from "./index2.js";
 const defaultAttributes = {
   outline: {
     xmlns: "http://www.w3.org/2000/svg",

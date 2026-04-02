@@ -1,4 +1,4 @@
-import { a0 as sanitize_props, a1 as spread_props, a2 as slot, a3 as ensure_array_like, a4 as attr, a5 as escape_html, a6 as store_get, a7 as attr_class, a8 as unsubscribe_stores, a9 as attr_style, aa as stringify, ab as head } from "../../chunks/index2.js";
+import { X as sanitize_props, Y as spread_props, Z as slot, _ as ensure_array_like, $ as attr, a0 as escape_html, a1 as store_get, a2 as attr_class, a3 as unsubscribe_stores, a4 as attr_style, a5 as stringify, a6 as head } from "../../chunks/index2.js";
 import { p as page } from "../../chunks/index3.js";
 import { I as Icon } from "../../chunks/Icon.js";
 import { a as Socials, S as Site } from "../../chunks/common.js";
@@ -39,9 +39,18 @@ function Palette($$renderer, $$props) {
         "d": "M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
       }
     ],
-    ["path", { "d": "M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }],
-    ["path", { "d": "M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }],
-    ["path", { "d": "M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }]
+    [
+      "path",
+      { "d": "M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
+    ],
+    [
+      "path",
+      { "d": "M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
+    ],
+    [
+      "path",
+      { "d": "M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
+    ]
   ];
   Icon($$renderer, spread_props([
     { type: "outline", name: "palette" },
@@ -140,7 +149,7 @@ function Footer($$renderer, $$props) {
       let item = each_array[$$index];
       const Icon2 = item.icon;
       $$renderer2.push(`<a${attr("href", item.url)} target="_blank" rel="noopener noreferrer"${attr("aria-label", item.label)} class="text-subtext1 hover:text-accent transition-colors duration-200"><!---->`);
-      Icon2?.($$renderer2, { stroke: 1.5 });
+      Icon2($$renderer2, { stroke: 1.5 });
       $$renderer2.push(`<!----></a>`);
     }
     $$renderer2.push(`<!--]--></div></div></footer>`);

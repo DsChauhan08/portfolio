@@ -1,6 +1,6 @@
 import "clsx";
 import { B as Brand_github } from "./brand-github.js";
-import { a0 as sanitize_props, a1 as spread_props, a2 as slot } from "./index2.js";
+import { X as sanitize_props, Y as spread_props, Z as slot } from "./index2.js";
 import { I as Icon } from "./Icon.js";
 function Mail($$renderer, $$props) {
   const $$sanitized_props = sanitize_props($$props);
@@ -8,7 +8,7 @@ function Mail($$renderer, $$props) {
     [
       "path",
       {
-        "d": "M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"
+        "d": "M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
       }
     ],
     ["path", { "d": "M3 7l9 6l9 -6" }]

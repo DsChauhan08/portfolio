@@ -1,4 +1,4 @@
-const dev = false;
+const BROWSER = false;
 export {
-  dev as d
+  BROWSER as B
 };
