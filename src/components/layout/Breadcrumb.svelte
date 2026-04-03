@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/state';
+	import { IconHome } from '@tabler/icons-svelte';
 
 	const breadcrumbs = $derived(page.url.pathname.split('/').filter(Boolean).slice(0, 4));
 </script>
@@ -17,7 +18,15 @@
 <nav aria-label="Breadcrumbs">
 	<ul class="text-md flex items-center">
 		<li class="inline-flex items-center">
-			<a class="animation-wiggle text-accent hover:text-accent/40" href="/">~</a>
+			<a 
+				class="animation-wiggle text-accent hover:text-accent/80 inline-flex items-center gap-1 transition-colors" 
+				href="/"
+				title="Home"
+				aria-label="Go to homepage"
+			>
+				<IconHome size={16} />
+				<span class="text-sm">~</span>
+			</a>
 		</li>
 
 		{#each breadcrumbs as text, i ('Bred' + i)}

@@ -3964,6 +3964,30 @@ function Folders($$renderer, $$props) {
     }
   ]));
 }
+function Home($$renderer, $$props) {
+  const $$sanitized_props = sanitize_props($$props);
+  const iconNode = [
+    ["path", { "d": "M5 12l-2 0l9 -9l9 9l-2 0" }],
+    [
+      "path",
+      { "d": "M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" }
+    ],
+    ["path", { "d": "M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" }]
+  ];
+  Icon($$renderer, spread_props([
+    { type: "outline", name: "home" },
+    $$sanitized_props,
+    {
+      iconNode,
+      children: ($$renderer2) => {
+        $$renderer2.push(`<!--[-->`);
+        slot($$renderer2, $$props, "default", {});
+        $$renderer2.push(`<!--]-->`);
+      },
+      $$slots: { default: true }
+    }
+  ]));
+}
 function Mail($$renderer, $$props) {
   const $$sanitized_props = sanitize_props($$props);
   const iconNode = [
@@ -4124,6 +4148,7 @@ export {
   Code as C,
   External_link as E,
   Feather as F,
+  Home as H,
   Menu_2 as M,
   Palette as P,
   Star as S,

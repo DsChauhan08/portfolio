@@ -9,12 +9,13 @@ function HuggingFace($$renderer) {
 const Site = {
   name: "Dhananjay Singh Chauhan",
   url: "https://dschauhan.dev",
-  description: "Dhananjay Singh Chauhan - Year 12 student; forensics and blue team. NixOS user, reality compiler, LLM enjoyer.",
+  description: "Dhananjay Singh Chauhan - Year 12 student specializing in cybersecurity, digital forensics, and blue team operations. NixOS user focused on secure systems and privacy.",
   tags: [
     "Dhananjay Singh Chauhan",
     "DsChauhan08",
     "Year 12 Student",
-    "Forensics",
+    "Cybersecurity",
+    "Digital Forensics",
     "Blue Team",
     "Security",
     "NixOS",

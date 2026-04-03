@@ -1,4 +1,4 @@
-import { c as attr, g as attr_class, d as escape_html, S as Star, A as Arrow_right, e as ensure_array_like, h as attr_style, i as stringify, m as Brand_github, F as Feather, E as External_link, n as Brain, C as Code } from "../../chunks/ui-icons.js";
+import { c as attr, g as attr_class, d as escape_html, S as Star, A as Arrow_right, e as ensure_array_like, h as attr_style, i as stringify, m as Brand_github, F as Feather, E as External_link, n as Brain } from "../../chunks/ui-icons.js";
 import { P as ProjectTags } from "../../chunks/ProjectTags.js";
 import { S as Site, K as Kaggle, H as HuggingFace } from "../../chunks/common.js";
 import { f as formatDate } from "../../chunks/date.js";
@@ -91,7 +91,7 @@ const Home = {
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { data } = $$props;
-    $$renderer2.push(`<div class="mx-auto max-w-3xl space-y-12 px-4 py-8 md:py-12"><section class="space-y-4"><h1 class="text-3xl font-bold"><span class="text-accent">Dhananjay Singh Chauhan</span></h1> <p class="text-subtext0 max-w-prose leading-relaxed">Year 12 student. Forensics and blue team enthusiast. I write code like a stoic, configure systems like a monk, and break things like a scientist.</p> <p class="text-subtext1 text-sm">Currently learning: CCNA, CompTIA Security+, Malware Analysis, LLM fine-tuning.</p> <div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2"><!--[-->`);
+    $$renderer2.push(`<div class="mx-auto max-w-3xl space-y-12 px-4 py-8 md:py-12"><section class="space-y-4"><h1 class="text-3xl font-bold"><span class="text-accent">Dhananjay Singh Chauhan</span></h1> <p class="text-subtext0 max-w-prose leading-relaxed">Year 12 student specializing in cybersecurity, digital forensics, and blue team operations. Focused on secure systems, threat detection, and malware analysis.</p> <p class="text-subtext1 text-sm">Currently learning: CCNA, CompTIA Security+, Malware Analysis, LLM fine-tuning.</p> <div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2"><!--[-->`);
     const each_array = ensure_array_like(Home.socialLinks);
     for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
       let link = each_array[$$index];
@@ -147,26 +147,9 @@ function _page($$renderer, $$props) {
     Brain($$renderer2, { size: 16, class: "text-accent" });
     $$renderer2.push(`<!----> Keeping Myself Sane</h2> <a href="/philosophy" class="text-accent/80 hover:text-accent text-xs">`);
     External_link($$renderer2, { size: 14 });
-    $$renderer2.push(`<!----></a></div> <p class="text-subtext0 text-sm">Thoughts on stoicism, systems thinking, and staying grounded while breaking things.</p> <a href="/philosophy" class="text-accent mt-3 inline-flex items-center gap-1 text-sm hover:underline">Read more `);
+    $$renderer2.push(`<!----></a></div> <p class="text-subtext0 text-sm">Thoughts on philosophy, systems thinking, and personal growth in technology.</p> <a href="/philosophy" class="text-accent mt-3 inline-flex items-center gap-1 text-sm hover:underline">Read more `);
     Arrow_right($$renderer2, { size: 14 });
-    $$renderer2.push(`<!----></a></div></section> `);
-    if (data.commitData?.commits?.length > 0) {
-      $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<section class="border-surface0 bg-base rounded-lg border p-4"><div class="mb-3 flex items-center justify-between"><h2 class="text-text flex items-center gap-2 text-sm font-semibold">`);
-      Code($$renderer2, { size: 16, class: "text-accent" });
-      $$renderer2.push(`<!----> Recent Commits</h2> <a${attr("href", Site.out.github)} target="_blank" rel="noopener noreferrer" class="text-accent/80 hover:text-accent text-xs">`);
-      External_link($$renderer2, { size: 14 });
-      $$renderer2.push(`<!----></a></div> <ul class="space-y-1.5 text-sm"><!--[-->`);
-      const each_array_2 = ensure_array_like(data.commitData.commits.slice(0, 4));
-      for (let $$index_2 = 0, $$length = each_array_2.length; $$index_2 < $$length; $$index_2++) {
-        let commit = each_array_2[$$index_2];
-        $$renderer2.push(`<li><a${attr("href", commit.href)} target="_blank" rel="noopener noreferrer" class="text-subtext0 hover:text-accent flex items-center gap-2"${attr("title", commit.message)}><span class="text-text font-medium">${escape_html(commit.repo.split("/")[1])}:</span> <span class="truncate">${escape_html(commit.message)}</span></a></li>`);
-      }
-      $$renderer2.push(`<!--]--></ul></section>`);
-    } else {
-      $$renderer2.push("<!--[!-->");
-    }
-    $$renderer2.push(`<!--]--></div>`);
+    $$renderer2.push(`<!----></a></div></section></div>`);
   });
 }
 export {

@@ -29,23 +29,42 @@ function createContentService({
   entries.forEach((entry) => loaderBySlug.set(entry.slug, entry));
   const moduleCache = /* @__PURE__ */ new Map();
   let allPromise = null;
+  let cachedAll = null;
+  const allEager = entries.every(({ loader }) => typeof loader !== "function");
   async function getAll() {
-    if (!allPromise) {
-      allPromise = Promise.all(
-        entries.map(async ({ slug, loader, path }) => {
-          let module = moduleCache.get(slug);
-          if (!module) {
-            module = await resolveModule(loader);
-            moduleCache.set(slug, module);
-          }
-          const metadata = module.metadata ?? module.frontmatter;
-          if (!metadata) {
-            throw new Error(`Missing metadata for ${path}`);
-          }
-          return { slug, metadata };
-        })
-      ).then((items) => items.filter(filter)).then((items) => items.sort(sort));
+    if (cachedAll) {
+      return cachedAll;
     }
+    if (allPromise) {
+      return allPromise;
+    }
+    if (allEager) {
+      const items = entries.map(({ slug, loader, path }) => {
+        const module = loader;
+        moduleCache.set(slug, module);
+        const metadata = module.metadata ?? module.frontmatter;
+        if (!metadata) {
+          throw new Error(`Missing metadata for ${path}`);
+        }
+        return { slug, metadata };
+      });
+      cachedAll = items.filter(filter).sort(sort);
+      return cachedAll;
+    }
+    allPromise = Promise.all(
+      entries.map(async ({ slug, loader, path }) => {
+        let module = moduleCache.get(slug);
+        if (!module) {
+          module = await resolveModule(loader);
+          moduleCache.set(slug, module);
+        }
+        const metadata = module.metadata ?? module.frontmatter;
+        if (!metadata) {
+          throw new Error(`Missing metadata for ${path}`);
+        }
+        return { slug, metadata };
+      })
+    ).then((items) => items.filter(filter)).then((items) => items.sort(sort));
     return allPromise;
   }
   async function getBySlug(slug) {

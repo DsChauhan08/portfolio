@@ -21,17 +21,16 @@
 
 		<div class="space-y-4">
 			<p class="text-subtext0 leading-relaxed">
-				<b>Hey!</b> I'm Dhananjay Singh Chauhan (DsChauhan08) — a Year 12 student interested in
-				cybersecurity, forensics, and blue team work.
+				<b>Hey!</b> I'm Dhananjay Singh Chauhan (DsChauhan08) — a Year 12 student specializing in
+				cybersecurity, digital forensics, and blue team operations.
 			</p>
 
 			<p class="text-subtext0 leading-relaxed">
-				I write code like a stoic. Configure systems like a monk. Break things like a scientist.
+				I focus on secure system design, threat detection, and defensive security strategies.
 			</p>
 
 			<p class="text-subtext0 leading-relaxed">
-				NixOS user, reality compiler, LLM enjoyer. I believe in building tools that work offline,
-				require no cloud dependencies, and respect user privacy.
+				NixOS user with a focus on privacy-respecting, offline-first tools. I build systems that work without cloud dependencies and prioritize user privacy.
 			</p>
 		</div>
 
@@ -114,11 +113,11 @@
 	<section class="space-y-4">
 		<h2 class="text-2xl font-bold">Philosophy</h2>
 		<blockquote class="text-subtext0 border-accent/50 border-l-2 pl-4 italic">
-			"Write code like a stoic. Configure systems like a monk. Break things like a scientist."
+			"Secure systems through disciplined design, defensive thinking, and continuous testing."
 		</blockquote>
 		<p class="text-subtext0 leading-relaxed">
-			I read code and books with equal hostility. Currently working through the Bhagavad Gita,
-			Marcus Aurelius, and learning from the best resources I can find.
+			I approach security with a methodical mindset. Currently studying the Bhagavad Gita,
+			Marcus Aurelius, and technical resources on cybersecurity and system hardening.
 		</p>
 	</section>
 </div>

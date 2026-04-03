@@ -5,17 +5,13 @@
 		IconArrowRight,
 		IconExternalLink,
 		IconFeather,
-		IconCode,
 		IconBrain
 	} from '@tabler/icons-svelte';
-	import Site from '$lib/config/common';
 	import { Home } from '$lib/config/pages';
 	import { formatDate } from '$utils/date';
-	import type { CommitData } from '$lib/api/commits';
 
 	type PageData = {
 		featuredProjects: FeaturedProject[];
-		commitData: CommitData;
 		latestPosts: {
 			slug: string;
 			metadata: { title: { text: string; config?: string }; published_at: string };
@@ -32,7 +28,7 @@
 			<span class="text-accent">Dhananjay Singh Chauhan</span>
 		</h1>
 		<p class="text-subtext0 max-w-prose leading-relaxed">
-			Year 12 student. Forensics and blue team enthusiast. I write code like a stoic, configure systems like a monk, and break things like a scientist.
+			Year 12 student specializing in cybersecurity, digital forensics, and blue team operations. Focused on secure systems, threat detection, and malware analysis.
 		</p>
 		<p class="text-subtext1 text-sm">
 			Currently learning: CCNA, CompTIA Security+, Malware Analysis, LLM fine-tuning.
@@ -112,7 +108,7 @@
 				</a>
 			</div>
 			<p class="text-subtext0 text-sm">
-				Thoughts on stoicism, systems thinking, and staying grounded while breaking things.
+				Thoughts on philosophy, systems thinking, and personal growth in technology.
 			</p>
 			<a
 				href="/philosophy"
@@ -122,40 +118,4 @@
 			</a>
 		</div>
 	</section>
-
-	<!-- Recent Activity -->
-	{#if data.commitData?.commits?.length > 0}
-		<section class="border-surface0 bg-base rounded-lg border p-4">
-			<div class="mb-3 flex items-center justify-between">
-				<h2 class="text-text flex items-center gap-2 text-sm font-semibold">
-					<IconCode size={16} class="text-accent" />
-					Recent Commits
-				</h2>
-				<a
-					href={Site.out.github}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="text-accent/80 hover:text-accent text-xs"
-				>
-					<IconExternalLink size={14} />
-				</a>
-			</div>
-			<ul class="space-y-1.5 text-sm">
-				{#each data.commitData.commits.slice(0, 4) as commit (commit.sha)}
-					<li>
-						<a
-							href={commit.href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="text-subtext0 hover:text-accent flex items-center gap-2"
-							title={commit.message}
-						>
-							<span class="text-text font-medium">{commit.repo.split('/')[1]}:</span>
-							<span class="truncate">{commit.message}</span>
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</section>
-	{/if}
 </div>

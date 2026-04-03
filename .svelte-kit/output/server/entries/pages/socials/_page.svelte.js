@@ -1,12 +1,12 @@
 import { j as head, e as ensure_array_like, c as attr, E as External_link, d as escape_html } from "../../../chunks/ui-icons.js";
-import { a as Socials } from "../../../chunks/common.js";
+import { a as Socials, S as Site } from "../../../chunks/common.js";
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     head("pmux9f", $$renderer2, ($$renderer3) => {
       $$renderer3.title(($$renderer4) => {
-        $$renderer4.push(`<title>Connect with Jason Cameron | Social Links</title>`);
+        $$renderer4.push(`<title>Connect with Dhananjay Singh Chauhan | Social Links</title>`);
       });
-      $$renderer3.push(`<meta name="description" content="Connect with Jason Cameron on various social platforms - GitHub, LinkedIn, X, Bluesky, Instagram, and WakaTime."/>`);
+      $$renderer3.push(`<meta name="description" content="Connect with Dhananjay Singh Chauhan on various social platforms - GitHub, Kaggle, HuggingFace, and Email."/>`);
     });
     $$renderer2.push(`<div class="mx-auto max-w-4xl px-4 py-6 sm:px-6 md:py-12"><div class="mb-8 text-center"><p class="text-subtext0 text-base leading-relaxed md:text-lg">Find me across the web. Let's build something together.</p></div> <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
     const each_array = ensure_array_like(Socials);
@@ -66,7 +66,7 @@ function _page($$renderer, $$props) {
       }
       $$renderer2.push(`<!--]--></span></div></div> <div class="bg-accent absolute bottom-0 left-0 h-0.5 w-0 transition-all duration-300 group-hover:w-full"></div></a>`);
     }
-    $$renderer2.push(`<!--]--></div> <div class="mt-12 text-center"><p class="text-subtext1 text-sm">Prefer email? Reach out at <a href="mailto:hi@jasoncameron.dev" class="link text-accent font-medium hover:underline">hi@jasoncameron.dev</a></p></div></div>`);
+    $$renderer2.push(`<!--]--></div> <div class="mt-12 text-center"><p class="text-subtext1 text-sm">Prefer email? Reach out at <a${attr("href", Site.out.email)} class="link text-accent font-medium hover:underline">${escape_html(Site.out.email.replace("mailto:", ""))}</a></p></div></div>`);
   });
 }
 export {

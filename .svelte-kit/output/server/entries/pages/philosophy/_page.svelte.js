@@ -11,7 +11,7 @@ function _page($$renderer, $$props) {
       const previousOccurrences = allWords.slice(0, wordIndex).filter((w) => w.toLowerCase().replace(/[^a-z0-9\s-_]/g, "") === normalized).length;
       return `_${safePath(slug)}__${normalized}${previousOccurrences > 0 ? "___" + previousOccurrences : ""}`;
     }
-    $$renderer2.push(`<div class="mx-auto max-w-prose px-4 py-8 sm:px-6 lg:px-8"><h1 class="text-text mb-8 text-3xl font-bold tracking-tight">Keeping Myself Sane</h1> <p class="text-subtext0 mb-8 border-l-2 border-accent/50 pl-4 italic">"Write code like a stoic. Configure systems like a monk. Break things like a scientist."</p> `);
+    $$renderer2.push(`<div class="mx-auto max-w-prose px-4 py-8 sm:px-6 lg:px-8"><h1 class="text-text mb-8 text-3xl font-bold tracking-tight">Keeping Myself Sane</h1> <p class="text-subtext0 mb-8 border-l-2 border-accent/50 pl-4 italic">"Reflections on philosophy, systems thinking, and personal growth in technology."</p> `);
     if (data.philosophy && data.philosophy.length) {
       $$renderer2.push("<!--[-->");
       $$renderer2.push(`<div class="space-y-6"><!--[-->`);

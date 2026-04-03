@@ -10,7 +10,7 @@ return {
 	assets: new Set(["css/catppuccin.css","css/colors.css","favicon.svg","fonts/jetbrains-mono-latin-400-normal.woff2","fonts/jetbrains-mono-latin-700-normal.woff2","images/avatar.webp","logos/hackcanada.svg","logos/rbc.svg","logos/stan.svg","logos/storagebox.svg","projects/advent-of-code-2025.png","projects/docsentinel.png","projects/docsentinel.webp","projects/mixgen.png","projects/mixgen.webp","projects/scrapy.png","projects/scrapy.webp","projects/tunl.png","projects/tunl.webp","resume.pdf","robots.txt"]),
 	mimeTypes: {".css":"text/css",".svg":"image/svg+xml",".woff2":"font/woff2",".webp":"image/webp",".png":"image/png",".pdf":"application/pdf",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.Bn-DHgU5.js",app:"_app/immutable/entry/app.DUAxGiMl.js",imports:["_app/immutable/entry/start.Bn-DHgU5.js","_app/immutable/chunks/B3zgwEe8.js","_app/immutable/chunks/DdQo10ER.js","_app/immutable/entry/app.DUAxGiMl.js","_app/immutable/chunks/Dp1pzeXC.js","_app/immutable/chunks/DdQo10ER.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.B7DXL-S9.js",app:"_app/immutable/entry/app.DNqFa09e.js",imports:["_app/immutable/entry/start.B7DXL-S9.js","_app/immutable/chunks/DUnRrMTe.js","_app/immutable/chunks/CvumDFOP.js","_app/immutable/entry/app.DNqFa09e.js","_app/immutable/chunks/Dp1pzeXC.js","_app/immutable/chunks/CvumDFOP.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -42,13 +42,6 @@ return {
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 3 },
 				endpoint: null
-			},
-			{
-				id: "/api/preview/[owner]/[repo]",
-				pattern: /^\/api\/preview\/([^/]+?)\/([^/]+?)\/?$/,
-				params: [{"name":"owner","optional":false,"rest":false,"chained":false},{"name":"repo","optional":false,"rest":false,"chained":false}],
-				page: null,
-				endpoint: __memo(() => import('./entries/endpoints/api/preview/_owner_/_repo_/_server.ts.js'))
 			},
 			{
 				id: "/philosophy",

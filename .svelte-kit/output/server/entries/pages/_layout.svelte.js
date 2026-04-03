@@ -1,4 +1,4 @@
-import { e as ensure_array_like, c as attr, d as escape_html, M as Menu_2, P as Palette, f as store_get, g as attr_class, u as unsubscribe_stores, h as attr_style, i as stringify, X, j as head, k as html } from "../../chunks/ui-icons.js";
+import { H as Home, e as ensure_array_like, c as attr, d as escape_html, M as Menu_2, P as Palette, f as store_get, g as attr_class, u as unsubscribe_stores, h as attr_style, i as stringify, X, j as head, k as html } from "../../chunks/ui-icons.js";
 import { p as page } from "../../chunks/index.js";
 import { a as Socials, S as Site } from "../../chunks/common.js";
 import { p as paletteNames, P as Palette$1, a as accentColorNames, A as Accent, B as BackgroundEnabled } from "../../chunks/theme.js";
@@ -21,7 +21,9 @@ function breadcrumb($$renderer, { text, href = void 0 }) {
 function Breadcrumb($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     const breadcrumbs = page.url.pathname.split("/").filter(Boolean).slice(0, 4);
-    $$renderer2.push(`<nav aria-label="Breadcrumbs" class="svelte-no9652"><ul class="text-md flex items-center svelte-no9652"><li class="inline-flex items-center svelte-no9652"><a class="animation-wiggle text-accent hover:text-accent/40 svelte-no9652" href="/">~</a></li> <!--[-->`);
+    $$renderer2.push(`<nav aria-label="Breadcrumbs" class="svelte-no9652"><ul class="text-md flex items-center svelte-no9652"><li class="inline-flex items-center svelte-no9652"><a class="animation-wiggle text-accent hover:text-accent/80 inline-flex items-center gap-1 transition-colors svelte-no9652" href="/" title="Home" aria-label="Go to homepage">`);
+    Home($$renderer2, { size: 16 });
+    $$renderer2.push(`<!----> <span class="text-sm svelte-no9652">~</span></a></li> <!--[-->`);
     const each_array = ensure_array_like(breadcrumbs);
     for (let i = 0, $$length = each_array.length; i < $$length; i++) {
       let text = each_array[i];
@@ -148,7 +150,7 @@ function _layout($$renderer, $$props) {
       $$renderer3.title(($$renderer4) => {
         $$renderer4.push(`<title>${escape_html(title)}</title>`);
       });
-      $$renderer3.push(`<meta name="description"${attr("content", Site.description)}/> <meta property="og:title"${attr("content", title)}/> <meta property="og:description"${attr("content", Site.description)}/> <meta property="og:type" content="website"/> <meta property="og:url"${attr("content", Site.url + page.url.pathname)}/> <meta property="og:site_name"${attr("content", Site.name)}/> <meta property="og:image"${attr("content", Site.url + "/images/avatar.webp")}/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"${attr("content", title)}/> <meta name="twitter:description"${attr("content", Site.description)}/> <meta name="twitter:image"${attr("content", Site.url + "/images/avatar.webp")}/> <meta name="author"${attr("content", Site.seo.author)}/> <meta name="keywords"${attr("content", Site.tags.join(", "))}/> <meta name="robots" content="index, follow"/> <meta name="theme-color" content="#1e1e2e"/> <link rel="canonical"${attr("href", Site.url + page.url.pathname)}/> <link rel="dns-prefetch" href="https://api.github.com"/> <link rel="preconnect" href="https://api.github.com" crossorigin="anonymous"/> ${html(`<script type="application/ld+json">
+      $$renderer3.push(`<meta name="description"${attr("content", Site.description)}/> <meta property="og:title"${attr("content", title)}/> <meta property="og:description"${attr("content", Site.description)}/> <meta property="og:type" content="website"/> <meta property="og:url"${attr("content", Site.url + page.url.pathname)}/> <meta property="og:site_name"${attr("content", Site.name)}/> <meta property="og:image"${attr("content", Site.url + "/images/avatar.webp")}/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"${attr("content", title)}/> <meta name="twitter:description"${attr("content", Site.description)}/> <meta name="twitter:image"${attr("content", Site.url + "/images/avatar.webp")}/> <meta name="author"${attr("content", Site.seo.author)}/> <meta name="keywords"${attr("content", Site.tags.join(", "))}/> <meta name="robots" content="index, follow"/> <meta name="theme-color" content="#1e1e2e"/> <link rel="canonical"${attr("href", Site.url + page.url.pathname)}/> ${html(`<script type="application/ld+json">
 		${JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Person",

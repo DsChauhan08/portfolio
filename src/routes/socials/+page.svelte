@@ -1,13 +1,13 @@
 <script>
-	import { Socials } from '$lib/config/common';
+	import Site, { Socials } from '$lib/config/common';
 	import { IconExternalLink } from '@tabler/icons-svelte';
 </script>
 
 <svelte:head>
-	<title>Connect with Jason Cameron | Social Links</title>
+	<title>Connect with Dhananjay Singh Chauhan | Social Links</title>
 	<meta
 		name="description"
-		content="Connect with Jason Cameron on various social platforms - GitHub, LinkedIn, X, Bluesky, Instagram, and WakaTime."
+		content="Connect with Dhananjay Singh Chauhan on various social platforms - GitHub, Kaggle, HuggingFace, and Email."
 	/>
 </svelte:head>
 
@@ -94,8 +94,8 @@
 	<div class="mt-12 text-center">
 		<p class="text-subtext1 text-sm">
 			Prefer email? Reach out at
-			<a href="mailto:hi@jasoncameron.dev" class="link text-accent font-medium hover:underline">
-				hi@jasoncameron.dev
+			<a href={Site.out.email} class="link text-accent font-medium hover:underline">
+				{Site.out.email.replace('mailto:', '')}
 			</a>
 		</p>
 	</div>

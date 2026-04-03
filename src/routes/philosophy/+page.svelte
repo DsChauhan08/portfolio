@@ -26,7 +26,7 @@
 <div class="mx-auto max-w-prose px-4 py-8 sm:px-6 lg:px-8">
 	<h1 class="text-text mb-8 text-3xl font-bold tracking-tight">Keeping Myself Sane</h1>
 	<p class="text-subtext0 mb-8 border-l-2 border-accent/50 pl-4 italic">
-		"Write code like a stoic. Configure systems like a monk. Break things like a scientist."
+		"Reflections on philosophy, systems thinking, and personal growth in technology."
 	</p>
 
 	{#if data.philosophy && data.philosophy.length}

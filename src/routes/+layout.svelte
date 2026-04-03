@@ -65,10 +65,6 @@
 	<meta name="theme-color" content="#1e1e2e" />
 	<link rel="canonical" href={Site.url + page.url.pathname} />
 
-	<!-- DNS Prefetch and Preconnect for External Resources -->
-	<link rel="dns-prefetch" href="https://api.github.com" />
-	<link rel="preconnect" href="https://api.github.com" crossorigin="anonymous" />
-
 	<!-- JSON-LD Person Schema -->
 	{@html `<script type="application/ld+json">
 		${JSON.stringify({

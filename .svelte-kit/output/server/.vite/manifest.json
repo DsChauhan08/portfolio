@@ -103,9 +103,6 @@
     "name": "poetry",
     "imports": [
       "_factory.js"
-    ],
-    "dynamicImports": [
-      "content/poetry/first-poem/+page.svx"
     ]
   },
   "_posts.js": {
@@ -148,12 +145,6 @@
     "file": "chunks/utils.js",
     "name": "utils"
   },
-  "content/poetry/first-poem/+page.svx": {
-    "file": "chunks/_page.js",
-    "name": "_page",
-    "src": "content/poetry/first-poem/+page.svx",
-    "isDynamicEntry": true
-  },
   "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
     "file": "remote-entry.js",
     "name": "remote-entry",
@@ -194,12 +185,6 @@
     "src": "src/lib/icons/Devpost.svelte",
     "isDynamicEntry": true
   },
-  "src/lib/preview/github.ts": {
-    "file": "chunks/github.js",
-    "name": "github",
-    "src": "src/lib/preview/github.ts",
-    "isDynamicEntry": true
-  },
   "src/routes/+error.svelte": {
     "file": "entries/pages/_error.svelte.js",
     "name": "entries/pages/_error.svelte",
@@ -231,7 +216,7 @@
       "_client.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BvIOJbmL.css"
+      "_app/immutable/assets/_layout.DZOkOX3e.css"
     ]
   },
   "src/routes/+page.server.ts": {
@@ -273,15 +258,6 @@
     "isEntry": true,
     "imports": [
       "_ui-icons.js"
-    ]
-  },
-  "src/routes/api/preview/[owner]/[repo]/+server.ts": {
-    "file": "entries/endpoints/api/preview/_owner_/_repo_/_server.ts.js",
-    "name": "entries/endpoints/api/preview/_owner_/_repo_/_server.ts",
-    "src": "src/routes/api/preview/[owner]/[repo]/+server.ts",
-    "isEntry": true,
-    "dynamicImports": [
-      "src/lib/preview/github.ts"
     ]
   },
   "src/routes/philosophy/+page.server.ts": {

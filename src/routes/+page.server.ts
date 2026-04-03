@@ -1,8 +1,6 @@
 import type { PageServerLoad } from "./$types";
 import { getFeaturedProjects } from "$lib/content/projects";
-import { fetchLatestCommits } from "$lib/api/commits";
 import { getLatestPoetry } from "$lib/content/poetry";
-import { measurePerformance } from "$lib/utils/performance";
 
 const impactPriority = new Map<string, number>([
   ["safenet", 0],
@@ -27,23 +25,18 @@ function rankFeaturedProjects(
 }
 
 export const load: PageServerLoad = async () => {
-  // Removed KV/Cloudflare platform binding
-  return await measurePerformance("homepage-load-total", async () => {
-    const [featuredProjectsRaw, commitData, latestPosts] = await Promise.all([
-      measurePerformance("get-featured-projects", () => getFeaturedProjects()),
-      fetchLatestCommits(),
-      measurePerformance("get-latest-poetry", async () => {
-        const poetry = await getLatestPoetry();
-        return poetry.filter((p) => p.metadata?.published_at);
-      }),
-    ]);
+  // Build static homepage to eliminate runtime server latency
+  const [featuredProjectsRaw, latestPosts] = await Promise.all([
+    getFeaturedProjects(),
+    getLatestPoetry(),
+  ]);
 
-    const featuredProjects = rankFeaturedProjects(featuredProjectsRaw);
+  const featuredProjects = rankFeaturedProjects(featuredProjectsRaw);
 
-    return {
-      featuredProjects,
-      commitData,
-      latestPosts,
-    };
-  });
+  return {
+    featuredProjects,
+    latestPosts,
+  };
 };
+
+export const prerender = true;

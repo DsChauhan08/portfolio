@@ -2,11 +2,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 	<channel>
 		<title>Dhananjay Singh Chauhan's Posts</title>
-		<description>Dhananjay Singh Chauhan - Year 12 student; forensics and blue team. NixOS user, reality compiler, LLM enjoyer.</description>
+		<description>Dhananjay Singh Chauhan - Year 12 student specializing in cybersecurity, digital forensics, and blue team operations. NixOS user focused on secure systems and privacy.</description>
 		<link>https://dschauhan.dev</link>
 		<atom:link href="https://dschauhan.dev/posts/rss.xml" rel="self" type="application/rss+xml"/>
 		<language>en-us</language>
-		<lastBuildDate>Fri, 03 Apr 2026 15:13:53 GMT</lastBuildDate>
+		<lastBuildDate>Fri, 03 Apr 2026 16:05:42 GMT</lastBuildDate>
 		
 	</channel>
 </rss>
