@@ -1,4 +1,4 @@
-import { a6 as head, a0 as escape_html, a8 as bind_props, $ as attr } from "../../../../chunks/index2.js";
+import { j as head, d as escape_html, p as bind_props, c as attr } from "../../../../chunks/ui-icons.js";
 import { f as formatDate } from "../../../../chunks/date.js";
 import { S as SlabTitle } from "../../../../chunks/SlabTitle.js";
 import { P as PostTags } from "../../../../chunks/PostTags.js";

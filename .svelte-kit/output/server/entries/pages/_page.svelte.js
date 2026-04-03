@@ -1,87 +1,7 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, $ as attr, a2 as attr_class, a0 as escape_html, _ as ensure_array_like, a4 as attr_style, a5 as stringify } from "../../chunks/index2.js";
+import { c as attr, g as attr_class, d as escape_html, S as Star, A as Arrow_right, e as ensure_array_like, h as attr_style, i as stringify, m as Brand_github, F as Feather, E as External_link, n as Brain, C as Code } from "../../chunks/ui-icons.js";
 import { P as ProjectTags } from "../../chunks/ProjectTags.js";
-import { I as Icon } from "../../chunks/Icon.js";
 import { S as Site, K as Kaggle, H as HuggingFace } from "../../chunks/common.js";
-import { B as Brand_github } from "../../chunks/brand-github.js";
 import { f as formatDate } from "../../chunks/date.js";
-import { E as External_link } from "../../chunks/external-link.js";
-import { B as Brain } from "../../chunks/brain.js";
-import { C as Code } from "../../chunks/code.js";
-function Arrow_right($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    ["path", { "d": "M5 12l14 0" }],
-    ["path", { "d": "M13 18l6 -6" }],
-    ["path", { "d": "M13 6l6 6" }]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "arrow-right" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
-function Feather($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    [
-      "path",
-      {
-        "d": "M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4"
-      }
-    ],
-    [
-      "path",
-      {
-        "d": "M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4"
-      }
-    ]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "feather" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
-function Star($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    [
-      "path",
-      {
-        "d": "M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-      }
-    ]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "star" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
 function LinkWithIcon($$renderer, $$props) {
   let { href, text, icon, external = false, class: extraClasses = "" } = $$props;
   const target = external ? "_blank" : void 0;
@@ -111,20 +31,20 @@ function Featured($$renderer, $$props) {
         size: 14,
         class: "transition-transform duration-200 group-hover:translate-x-0.5"
       });
-      $$renderer2.push(`<!----></a></div> <div class="grid grid-cols-1 gap-6 md:grid-cols-2"><!--[-->`);
+      $$renderer2.push(`<!----></a></div> <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"><!--[-->`);
       const each_array = ensure_array_like(displayProjects);
       for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
         let project = each_array[$$index];
-        $$renderer2.push(`<a${attr("href", `/projects/${project.slug}`)} class="border-surface0 bg-base hover:border-accent focus-visible:border-accent group block overflow-hidden rounded-xl border shadow-lg transition-all duration-300 hover:shadow-xl focus:outline-none">`);
+        $$renderer2.push(`<a${attr("href", `/projects/${project.slug}`)} class="border-surface0 bg-base hover:border-accent focus-visible:border-accent group block overflow-hidden rounded-xl border shadow-md transition-all duration-300 hover:shadow-lg focus:outline-none">`);
         if (project.metadata.image) {
           $$renderer2.push("<!--[-->");
-          $$renderer2.push(`<div class="overflow-hidden"><img${attr("src", project.metadata.image.url)}${attr("alt", project.metadata.image.alt)} class="aspect-video w-full transition-transform duration-300 group-hover:scale-105"${attr_style("", {
+          $$renderer2.push(`<div class="overflow-hidden"><img${attr("src", project.metadata.image.url)}${attr("alt", project.metadata.image.alt)} class="aspect-video w-full transition-transform duration-300 group-hover:scale-[1.03]"${attr_style("", {
             "view-transition-name": `project-img-${stringify(project.slug)}`
           })}/></div>`);
         } else {
           $$renderer2.push("<!--[!-->");
         }
-        $$renderer2.push(`<!--]--> <div class="space-y-3 p-5"><h3 class="text-text group-hover:text-accent text-xl font-semibold transition-colors"${attr_style("", {
+        $$renderer2.push(`<!--]--> <div class="space-y-2.5 p-4"><h3 class="text-text group-hover:text-accent text-lg font-semibold transition-colors"${attr_style("", {
           "view-transition-name": `project-title-${stringify(project.slug)}`
         })}>${escape_html(project.metadata.title)}</h3> <p class="text-subtext0 line-clamp-2 text-sm">${escape_html(project.metadata.description)}</p> `);
         if (project.metadata.tags && project.metadata.tags.length > 0) {
@@ -197,7 +117,7 @@ function _page($$renderer, $$props) {
       class: "transition-transform group-hover:translate-x-0.5"
     });
     $$renderer2.push(`<!----></a></div></section> `);
-    Featured($$renderer2, { projects: data.featuredProjects, maxProjects: 3 });
+    Featured($$renderer2, { projects: data.featuredProjects, maxProjects: 6 });
     $$renderer2.push(`<!----> <section class="grid gap-6 md:grid-cols-2"><div class="border-surface0 bg-base rounded-lg border p-4"><div class="mb-3 flex items-center justify-between"><h2 class="text-text flex items-center gap-2 text-sm font-semibold">`);
     Feather($$renderer2, { size: 16, class: "text-accent" });
     $$renderer2.push(`<!----> Poetry</h2> <a href="/poetry" class="text-accent/80 hover:text-accent text-xs">`);

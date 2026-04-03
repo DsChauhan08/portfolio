@@ -1,5 +1,5 @@
-import { a6 as head, a0 as escape_html, a4 as attr_style, _ as ensure_array_like, a2 as attr_class, a5 as stringify, a7 as clsx } from "../../chunks/index2.js";
-import { p as page } from "../../chunks/index3.js";
+import { j as head, d as escape_html, h as attr_style, e as ensure_array_like, g as attr_class, i as stringify, l as clsx } from "../../chunks/ui-icons.js";
+import { p as page } from "../../chunks/index.js";
 function _error($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     const CONFIG = {

@@ -1,0 +1,1 @@
+function d(e,t){try{const a=t!=null&&t.shortMonth?"short":"long",r=t!=null&&t.yearMonthOnly?{year:"numeric",month:a}:{year:"numeric",month:a,day:"2-digit"},n=e.match(/^(\d{4})-(\d{2})-(\d{2})/);if(n){const[,c,h,m]=n;return new Date(parseInt(c),parseInt(h)-1,parseInt(m)).toLocaleDateString("en-US",r)}return new Date(e).toLocaleDateString("en-US",r)}catch{return e}}export{d as f};

@@ -9,7 +9,7 @@ tags = ["rust", "web-scraping", "cli"]
 images = []
 
 [image]
-url = "/projects/scrapy.png"
+url = "/projects/scrapy.webp"
 alt = "scrapy"
 
 [[links]]

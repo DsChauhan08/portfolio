@@ -1,6 +1,5 @@
-import { _ as ensure_array_like, a2 as attr_class, a4 as attr_style, a0 as escape_html } from "./index2.js";
+import { T as Tag, e as ensure_array_like, g as attr_class, h as attr_style, d as escape_html } from "./ui-icons.js";
 import { a as accentColorNames } from "./theme.js";
-import { T as Tag } from "./date.js";
 function PostTags($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { post, showIcon = true, colored = true } = $$props;

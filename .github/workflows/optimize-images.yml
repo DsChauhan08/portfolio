@@ -1,0 +1,53 @@
+name: Optimize Images
+
+on:
+  push:
+    paths:
+      - "static/**/*.png"
+      - "static/**/*.jpg"
+      - "static/**/*.jpeg"
+  workflow_dispatch:
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Convert PNG/JPG to WebP
+        run: |
+          find static -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) | while read img; do
+            if [ -f "$img" ]; then
+              magick "$img" -quality 85 "${img%.*}.webp"
+              echo "Converted: $img -> ${img%.*}.webp"
+            fi
+          done
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit optimized images
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add static/**/*.webp
+          git commit -m "chore: optimize images to WebP format [skip ci]"
+
+      - name: Push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

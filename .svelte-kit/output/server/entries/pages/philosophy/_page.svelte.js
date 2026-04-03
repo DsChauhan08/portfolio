@@ -1,4 +1,4 @@
-import { _ as ensure_array_like, $ as attr, a4 as attr_style, a0 as escape_html, a5 as stringify, a8 as bind_props } from "../../../chunks/index2.js";
+import { e as ensure_array_like, c as attr, h as attr_style, d as escape_html, i as stringify, p as bind_props } from "../../../chunks/ui-icons.js";
 import { f as formatDate } from "../../../chunks/date.js";
 import { P as PostTags } from "../../../chunks/PostTags.js";
 function _page($$renderer, $$props) {

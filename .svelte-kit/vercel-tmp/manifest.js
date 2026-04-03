@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["css/catppuccin.css","css/colors.css","favicon.svg","images/avatar.webp","logos/hackcanada.svg","logos/rbc.svg","logos/stan.svg","logos/storagebox.svg","projects/advent-of-code-2025.png","projects/docsentinel.png","projects/mixgen.png","projects/scrapy.png","projects/tunl.png","resume.pdf","robots.txt"]),
-	mimeTypes: {".css":"text/css",".svg":"image/svg+xml",".webp":"image/webp",".png":"image/png",".pdf":"application/pdf",".txt":"text/plain"},
+	assets: new Set(["css/catppuccin.css","css/colors.css","favicon.svg","fonts/jetbrains-mono-latin-400-normal.woff2","fonts/jetbrains-mono-latin-700-normal.woff2","images/avatar.webp","logos/hackcanada.svg","logos/rbc.svg","logos/stan.svg","logos/storagebox.svg","projects/advent-of-code-2025.png","projects/docsentinel.png","projects/docsentinel.webp","projects/mixgen.png","projects/mixgen.webp","projects/scrapy.png","projects/scrapy.webp","projects/tunl.png","projects/tunl.webp","resume.pdf","robots.txt"]),
+	mimeTypes: {".css":"text/css",".svg":"image/svg+xml",".woff2":"font/woff2",".webp":"image/webp",".png":"image/png",".pdf":"application/pdf",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CqC80RUU.js",app:"_app/immutable/entry/app.ZjJmDM3T.js",imports:["_app/immutable/entry/start.CqC80RUU.js","_app/immutable/chunks/BjgIpC2c.js","_app/immutable/chunks/Dz-xlNr2.js","_app/immutable/chunks/DopmzzQP.js","_app/immutable/chunks/uADJdpBP.js","_app/immutable/chunks/DAevgu2Y.js","_app/immutable/entry/app.ZjJmDM3T.js","_app/immutable/chunks/Dp1pzeXC.js","_app/immutable/chunks/DopmzzQP.js","_app/immutable/chunks/uADJdpBP.js","_app/immutable/chunks/Bzak7iHL.js","_app/immutable/chunks/Dz-xlNr2.js","_app/immutable/chunks/DvTFAjPq.js","_app/immutable/chunks/DFeQMqI8.js","_app/immutable/chunks/BWQCvJqE.js","_app/immutable/chunks/By7T8XCg.js","_app/immutable/chunks/DAevgu2Y.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.Bn-DHgU5.js",app:"_app/immutable/entry/app.DUAxGiMl.js",imports:["_app/immutable/entry/start.Bn-DHgU5.js","_app/immutable/chunks/B3zgwEe8.js","_app/immutable/chunks/DdQo10ER.js","_app/immutable/entry/app.DUAxGiMl.js","_app/immutable/chunks/Dp1pzeXC.js","_app/immutable/chunks/DdQo10ER.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('../output/server/nodes/0.js')),
 			__memo(() => import('../output/server/nodes/1.js')),
@@ -83,7 +83,7 @@ return {
 				endpoint: null
 			}
 		],
-		prerendered_routes: new Set(["/about","/about/__data.json","/philosophy/rss.xml","/pics","/pics/__data.json","/poetry/rss.xml","/sitemap.xml","/projects/docsentinel","/projects/docsentinel/__data.json","/projects/qwen-finance-gguf","/projects/qwen-finance-gguf/__data.json","/projects/scrapy","/projects/scrapy/__data.json","/projects/tunl","/projects/tunl/__data.json","/projects/mixgen","/projects/mixgen/__data.json","/projects/advent-of-code-2025","/projects/advent-of-code-2025/__data.json"]),
+		prerendered_routes: new Set(["/about","/about/__data.json","/philosophy/rss.xml","/pics","/pics/__data.json","/poetry/rss.xml","/sitemap.xml","/projects/easycopy","/projects/easycopy/__data.json","/projects/sat-stream","/projects/sat-stream/__data.json","/projects/safenet","/projects/safenet/__data.json","/projects/qalpha","/projects/qalpha/__data.json","/projects/synthetic-finance-data-3m","/projects/synthetic-finance-data-3m/__data.json","/projects/docsentinel","/projects/docsentinel/__data.json","/projects/qwen-finance-gguf","/projects/qwen-finance-gguf/__data.json","/projects/scrapy","/projects/scrapy/__data.json","/projects/tunl","/projects/tunl/__data.json","/projects/mixgen","/projects/mixgen/__data.json","/projects/advent-of-code-2025","/projects/advent-of-code-2025/__data.json"]),
 		matchers: async () => {
 			
 			return {  };

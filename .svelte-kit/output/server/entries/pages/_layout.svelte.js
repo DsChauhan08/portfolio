@@ -1,6 +1,5 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, _ as ensure_array_like, $ as attr, a0 as escape_html, a1 as store_get, a2 as attr_class, a3 as unsubscribe_stores, a4 as attr_style, a5 as stringify, a6 as head } from "../../chunks/index2.js";
-import { p as page } from "../../chunks/index3.js";
-import { I as Icon } from "../../chunks/Icon.js";
+import { e as ensure_array_like, c as attr, d as escape_html, M as Menu_2, P as Palette, f as store_get, g as attr_class, u as unsubscribe_stores, h as attr_style, i as stringify, X, j as head, k as html } from "../../chunks/ui-icons.js";
+import { p as page } from "../../chunks/index.js";
 import { a as Socials, S as Site } from "../../chunks/common.js";
 import { p as paletteNames, P as Palette$1, a as accentColorNames, A as Accent, B as BackgroundEnabled } from "../../chunks/theme.js";
 import "@sveltejs/kit/internal";
@@ -8,84 +7,6 @@ import "../../chunks/exports.js";
 import "../../chunks/utils.js";
 import "@sveltejs/kit/internal/server";
 import "../../chunks/client.js";
-import { h as html } from "../../chunks/html.js";
-function Menu_2($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    ["path", { "d": "M4 6l16 0" }],
-    ["path", { "d": "M4 12l16 0" }],
-    ["path", { "d": "M4 18l16 0" }]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "menu-2" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
-function Palette($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    [
-      "path",
-      {
-        "d": "M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
-      }
-    ],
-    [
-      "path",
-      { "d": "M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
-    ],
-    [
-      "path",
-      { "d": "M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
-    ],
-    [
-      "path",
-      { "d": "M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }
-    ]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "palette" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
-function X($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    ["path", { "d": "M18 6l-12 12" }],
-    ["path", { "d": "M6 6l12 12" }]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "x" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
 function breadcrumb($$renderer, { text, href = void 0 }) {
   $$renderer.push(`<li class="inline-flex items-center svelte-no9652">`);
   if (href) {
@@ -147,9 +68,9 @@ function Footer($$renderer, $$props) {
     const each_array = ensure_array_like(Socials.filter((item) => item.footer));
     for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
       let item = each_array[$$index];
-      const Icon2 = item.icon;
+      const Icon = item.icon;
       $$renderer2.push(`<a${attr("href", item.url)} target="_blank" rel="noopener noreferrer"${attr("aria-label", item.label)} class="text-subtext1 hover:text-accent transition-colors duration-200"><!---->`);
-      Icon2($$renderer2, { stroke: 1.5 });
+      Icon($$renderer2, { stroke: 1.5 });
       $$renderer2.push(`<!----></a>`);
     }
     $$renderer2.push(`<!--]--></div></div></footer>`);
@@ -227,7 +148,7 @@ function _layout($$renderer, $$props) {
       $$renderer3.title(($$renderer4) => {
         $$renderer4.push(`<title>${escape_html(title)}</title>`);
       });
-      $$renderer3.push(`<meta name="description"${attr("content", Site.description)}/> <meta property="og:title"${attr("content", title)}/> <meta property="og:description"${attr("content", Site.description)}/> <meta property="og:type" content="website"/> <meta property="og:url"${attr("content", Site.url)}/> <meta property="og:site_name"${attr("content", Site.name)}/> <meta name="author"${attr("content", Site.seo.author)}/> <meta name="keywords"${attr("content", Site.tags.join(", "))}/> <meta name="robots" content="index, follow"/> <link rel="canonical"${attr("href", Site.url + page.url.pathname)}/> ${html(`<script type="application/ld+json">
+      $$renderer3.push(`<meta name="description"${attr("content", Site.description)}/> <meta property="og:title"${attr("content", title)}/> <meta property="og:description"${attr("content", Site.description)}/> <meta property="og:type" content="website"/> <meta property="og:url"${attr("content", Site.url + page.url.pathname)}/> <meta property="og:site_name"${attr("content", Site.name)}/> <meta property="og:image"${attr("content", Site.url + "/images/avatar.webp")}/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"${attr("content", title)}/> <meta name="twitter:description"${attr("content", Site.description)}/> <meta name="twitter:image"${attr("content", Site.url + "/images/avatar.webp")}/> <meta name="author"${attr("content", Site.seo.author)}/> <meta name="keywords"${attr("content", Site.tags.join(", "))}/> <meta name="robots" content="index, follow"/> <meta name="theme-color" content="#1e1e2e"/> <link rel="canonical"${attr("href", Site.url + page.url.pathname)}/> <link rel="dns-prefetch" href="https://api.github.com"/> <link rel="preconnect" href="https://api.github.com" crossorigin="anonymous"/> ${html(`<script type="application/ld+json">
 		${JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Person",

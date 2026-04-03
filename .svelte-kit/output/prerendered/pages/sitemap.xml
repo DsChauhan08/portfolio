@@ -39,6 +39,36 @@
 	
 	
 	<url>
+		<loc>https://dschauhan.dev/projects/easycopy</loc>
+		<lastmod>2026-03-31T00:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://dschauhan.dev/projects/sat-stream</loc>
+		<lastmod>2026-03-30T00:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://dschauhan.dev/projects/safenet</loc>
+		<lastmod>2026-03-29T00:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://dschauhan.dev/projects/qalpha</loc>
+		<lastmod>2026-03-28T00:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://dschauhan.dev/projects/synthetic-finance-data-3m</loc>
+		<lastmod>2026-03-27T00:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
 		<loc>https://dschauhan.dev/projects/docsentinel</loc>
 		<lastmod>2026-01-10T00:00:00.000Z</lastmod>
 		<changefreq>monthly</changefreq>

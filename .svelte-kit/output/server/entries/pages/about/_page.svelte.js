@@ -1,8 +1,5 @@
-import { a6 as head, $ as attr } from "../../../chunks/index2.js";
-import { M as Mail, S as Site } from "../../../chunks/common.js";
-import { B as Brain } from "../../../chunks/brain.js";
-import { C as Code } from "../../../chunks/code.js";
-import { B as Brand_github } from "../../../chunks/brand-github.js";
+import { j as head, n as Brain, C as Code, c as attr, m as Brand_github, o as Mail } from "../../../chunks/ui-icons.js";
+import { S as Site } from "../../../chunks/common.js";
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     head("cwls5q", $$renderer2, ($$renderer3) => {

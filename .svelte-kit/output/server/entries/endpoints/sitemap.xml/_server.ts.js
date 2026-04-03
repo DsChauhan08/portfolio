@@ -20,8 +20,12 @@ async function GET() {
     getAllTutorials()
   ]);
   const publishedPosts = posts.filter((post) => post.metadata?.published_at);
-  const publishedProjects = projects.filter((project) => project.metadata?.published);
-  const publishedTutorials = tutorials.filter((tutorial) => tutorial.metadata?.published_at);
+  const publishedProjects = projects.filter(
+    (project) => project.metadata?.published
+  );
+  const publishedTutorials = tutorials.filter(
+    (tutorial) => tutorial.metadata?.published_at
+  );
   const staticPages = [
     { path: "", priority: "1.0", changefreq: "weekly" },
     { path: "/about", priority: "0.8", changefreq: "monthly" },
@@ -31,7 +35,10 @@ async function GET() {
     { path: "/socials", priority: "0.5", changefreq: "monthly" },
     { path: "/pics", priority: "0.6", changefreq: "monthly" }
   ];
-  const headers = { "Content-Type": "application/xml" };
+  const headers = {
+    "Content-Type": "application/xml",
+    "Cache-Control": "public, max-age=3600, s-maxage=7200"
+  };
   const xml = `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	${staticPages.map(

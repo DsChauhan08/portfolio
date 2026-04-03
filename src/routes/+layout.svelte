@@ -48,14 +48,26 @@
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={Site.description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={Site.url} />
+	<meta property="og:url" content={Site.url + page.url.pathname} />
 	<meta property="og:site_name" content={Site.name} />
+	<meta property="og:image" content={Site.url + '/images/avatar.webp'} />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={Site.description} />
+	<meta name="twitter:image" content={Site.url + '/images/avatar.webp'} />
 
 	<!-- Additional Meta Tags -->
 	<meta name="author" content={Site.seo.author} />
 	<meta name="keywords" content={Site.tags.join(', ')} />
 	<meta name="robots" content="index, follow" />
+	<meta name="theme-color" content="#1e1e2e" />
 	<link rel="canonical" href={Site.url + page.url.pathname} />
+
+	<!-- DNS Prefetch and Preconnect for External Resources -->
+	<link rel="dns-prefetch" href="https://api.github.com" />
+	<link rel="preconnect" href="https://api.github.com" crossorigin="anonymous" />
 
 	<!-- JSON-LD Person Schema -->
 	{@html `<script type="application/ld+json">

@@ -1,32 +1,5 @@
 import "clsx";
-import { B as Brand_github } from "./brand-github.js";
-import { X as sanitize_props, Y as spread_props, Z as slot } from "./index2.js";
-import { I as Icon } from "./Icon.js";
-function Mail($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    [
-      "path",
-      {
-        "d": "M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-      }
-    ],
-    ["path", { "d": "M3 7l9 6l9 -6" }]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "mail" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
+import { m as Brand_github, o as Mail } from "./ui-icons.js";
 function Kaggle($$renderer) {
   $$renderer.push(`<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.281.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.075.285"></path></svg>`);
 }
@@ -94,7 +67,6 @@ const Socials = [
 export {
   HuggingFace as H,
   Kaggle as K,
-  Mail as M,
   Site as S,
   Socials as a
 };

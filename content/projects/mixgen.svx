@@ -9,7 +9,7 @@ tags = ["shell", "audio", "cli", "youtube"]
 images = []
 
 [image]
-url = "/projects/mixgen.png"
+url = "/projects/mixgen.webp"
 alt = "mixgen"
 
 [[links]]

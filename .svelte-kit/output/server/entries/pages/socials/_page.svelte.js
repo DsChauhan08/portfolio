@@ -1,6 +1,5 @@
-import { a6 as head, _ as ensure_array_like, $ as attr, a0 as escape_html } from "../../../chunks/index2.js";
+import { j as head, e as ensure_array_like, c as attr, E as External_link, d as escape_html } from "../../../chunks/ui-icons.js";
 import { a as Socials } from "../../../chunks/common.js";
-import { E as External_link } from "../../../chunks/external-link.js";
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     head("pmux9f", $$renderer2, ($$renderer3) => {

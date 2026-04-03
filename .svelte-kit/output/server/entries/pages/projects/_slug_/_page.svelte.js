@@ -1,38 +1,9 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, a6 as head, $ as attr, a4 as attr_style, a5 as stringify, a0 as escape_html, _ as ensure_array_like } from "../../../../chunks/index2.js";
-import { p as page } from "../../../../chunks/index3.js";
+import { j as head, c as attr, h as attr_style, i as stringify, d as escape_html, t as Calendar_event, e as ensure_array_like } from "../../../../chunks/ui-icons.js";
+import { p as page } from "../../../../chunks/index.js";
 import { f as formatDate } from "../../../../chunks/date.js";
 import { b as getIconByName } from "../../../../chunks/projects.js";
 /* empty css                         */
 import { P as ProjectTags } from "../../../../chunks/ProjectTags.js";
-import { I as Icon } from "../../../../chunks/Icon.js";
-function Calendar_event($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    [
-      "path",
-      {
-        "d": "M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
-      }
-    ],
-    ["path", { "d": "M16 3l0 4" }],
-    ["path", { "d": "M8 3l0 4" }],
-    ["path", { "d": "M4 11l16 0" }],
-    ["path", { "d": "M8 15h2v2h-2z" }]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "calendar-event" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { data } = $$props;
@@ -91,9 +62,9 @@ function _page($$renderer, $$props) {
       const each_array = ensure_array_like(data.metadata.links);
       for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
         let link = each_array[$$index];
-        const Icon2 = getIconByName(link.icon || (link.text.toLowerCase().includes("github") ? "github" : "external"));
+        const Icon = getIconByName(link.icon || (link.text.toLowerCase().includes("github") ? "github" : "external"));
         $$renderer2.push(`<a${attr("href", link.url)}${attr("title", link.text)} target="_blank" rel="noopener noreferrer" class="group hover:text-accent flex items-center gap-1.5 transition-colors"><!---->`);
-        Icon2($$renderer2, {
+        Icon($$renderer2, {
           size: 16,
           class: "transition-transform duration-200 group-hover:scale-120"
         });

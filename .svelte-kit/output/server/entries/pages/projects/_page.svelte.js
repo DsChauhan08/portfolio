@@ -1,37 +1,6 @@
-import { X as sanitize_props, Y as spread_props, Z as slot, a6 as head, _ as ensure_array_like, $ as attr, a4 as attr_style, a5 as stringify, a0 as escape_html } from "../../../chunks/index2.js";
+import { j as head, q as Folders, e as ensure_array_like, c as attr, h as attr_style, i as stringify, d as escape_html } from "../../../chunks/ui-icons.js";
 import { f as formatDate } from "../../../chunks/date.js";
 import { P as ProjectTags } from "../../../chunks/ProjectTags.js";
-import { I as Icon } from "../../../chunks/Icon.js";
-function Folders($$renderer, $$props) {
-  const $$sanitized_props = sanitize_props($$props);
-  const iconNode = [
-    [
-      "path",
-      {
-        "d": "M9 3h3l2 2h5a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
-      }
-    ],
-    [
-      "path",
-      {
-        "d": "M17 16v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2"
-      }
-    ]
-  ];
-  Icon($$renderer, spread_props([
-    { type: "outline", name: "folders" },
-    $$sanitized_props,
-    {
-      iconNode,
-      children: ($$renderer2) => {
-        $$renderer2.push(`<!--[-->`);
-        slot($$renderer2, $$props, "default", {});
-        $$renderer2.push(`<!--]-->`);
-      },
-      $$slots: { default: true }
-    }
-  ]));
-}
 function _page($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { data } = $$props;

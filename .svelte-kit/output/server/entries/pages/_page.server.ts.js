@@ -55,9 +55,25 @@ async function refreshCache() {
     }
   });
 }
+const impactPriority = /* @__PURE__ */ new Map([
+  ["safenet", 0],
+  ["qalpha", 1],
+  ["qwen-finance-gguf", 2],
+  ["synthetic-finance-data-3m", 3],
+  ["easycopy", 4],
+  ["sat-stream", 5]
+]);
+function rankFeaturedProjects(projects) {
+  return [...projects].sort((a, b) => {
+    const aPriority = impactPriority.get(a.slug) ?? Number.MAX_SAFE_INTEGER;
+    const bPriority = impactPriority.get(b.slug) ?? Number.MAX_SAFE_INTEGER;
+    if (aPriority !== bPriority) return aPriority - bPriority;
+    return +new Date(b.metadata.date) - +new Date(a.metadata.date);
+  });
+}
 const load = async () => {
   return await measurePerformance("homepage-load-total", async () => {
-    const [featuredProjects, commitData, latestPosts] = await Promise.all([
+    const [featuredProjectsRaw, commitData, latestPosts] = await Promise.all([
       measurePerformance("get-featured-projects", () => getFeaturedProjects()),
       fetchLatestCommits(),
       measurePerformance("get-latest-poetry", async () => {
@@ -65,6 +81,7 @@ const load = async () => {
         return poetry.filter((p) => p.metadata?.published_at);
       })
     ]);
+    const featuredProjects = rankFeaturedProjects(featuredProjectsRaw);
     return {
       featuredProjects,
       commitData,

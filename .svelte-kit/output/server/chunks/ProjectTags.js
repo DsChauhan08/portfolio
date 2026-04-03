@@ -1,6 +1,5 @@
-import { _ as ensure_array_like, a4 as attr_style, a0 as escape_html, a5 as stringify, a8 as bind_props } from "./index2.js";
+import { T as Tag, e as ensure_array_like, h as attr_style, d as escape_html, i as stringify, p as bind_props } from "./ui-icons.js";
 import { g as getRandomAccentColor } from "./theme.js";
-import { T as Tag } from "./date.js";
 function ProjectTags($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let project = $$props["project"];

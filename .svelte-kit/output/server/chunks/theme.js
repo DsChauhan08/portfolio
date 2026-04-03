@@ -1,4 +1,4 @@
-import { w as writable } from "./index.js";
+import { w as writable } from "./ui-icons.js";
 function persistentWritable(key, options) {
   const { validValues, onUpdate, rawString = false } = options;
   let initialValue = typeof options.defaultValue === "function" ? options.defaultValue() : options.defaultValue;

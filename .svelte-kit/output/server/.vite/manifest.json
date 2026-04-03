@@ -9,79 +9,43 @@
       "_environment.js"
     ]
   },
-  "_Icon.js": {
-    "file": "chunks/Icon.js",
-    "name": "Icon",
-    "imports": [
-      "_index2.js"
-    ]
-  },
   "_PostTags.js": {
     "file": "chunks/PostTags.js",
     "name": "PostTags",
     "imports": [
-      "_index2.js",
-      "_theme.js",
-      "_date.js"
+      "_ui-icons.js",
+      "_theme.js"
     ]
   },
   "_ProjectTags.js": {
     "file": "chunks/ProjectTags.js",
     "name": "ProjectTags",
     "imports": [
-      "_index2.js",
-      "_theme.js",
-      "_date.js"
+      "_ui-icons.js",
+      "_theme.js"
     ]
   },
   "_SlabTitle.js": {
     "file": "chunks/SlabTitle.js",
     "name": "SlabTitle",
     "imports": [
-      "_index2.js"
-    ]
-  },
-  "_brain.js": {
-    "file": "chunks/brain.js",
-    "name": "brain",
-    "imports": [
-      "_index2.js",
-      "_Icon.js"
-    ]
-  },
-  "_brand-github.js": {
-    "file": "chunks/brand-github.js",
-    "name": "brand-github",
-    "imports": [
-      "_index2.js",
-      "_Icon.js"
+      "_ui-icons.js"
     ]
   },
   "_client.js": {
     "file": "chunks/client.js",
     "name": "client",
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_exports.js",
-      "_utils.js",
-      "_index.js"
-    ]
-  },
-  "_code.js": {
-    "file": "chunks/code.js",
-    "name": "code",
-    "imports": [
-      "_index2.js",
-      "_Icon.js"
+      "_utils.js"
     ]
   },
   "_common.js": {
     "file": "chunks/common.js",
     "name": "common",
     "imports": [
-      "_brand-github.js",
-      "_index2.js",
-      "_Icon.js"
+      "_ui-icons.js"
     ]
   },
   "_content.B7H8doqR.css": {
@@ -90,11 +54,7 @@
   },
   "_date.js": {
     "file": "chunks/date.js",
-    "name": "date",
-    "imports": [
-      "_index2.js",
-      "_Icon.js"
-    ]
+    "name": "date"
   },
   "_environment.js": {
     "file": "chunks/environment.js",
@@ -104,53 +64,23 @@
     "file": "chunks/exports.js",
     "name": "exports"
   },
-  "_external-link.js": {
-    "file": "chunks/external-link.js",
-    "name": "external-link",
-    "imports": [
-      "_index2.js",
-      "_Icon.js"
-    ]
-  },
   "_factory.js": {
     "file": "chunks/factory.js",
     "name": "factory"
-  },
-  "_false.js": {
-    "file": "chunks/false.js",
-    "name": "false"
-  },
-  "_html.js": {
-    "file": "chunks/html.js",
-    "name": "html"
   },
   "_index.js": {
     "file": "chunks/index.js",
     "name": "index",
     "imports": [
-      "_index2.js"
-    ]
-  },
-  "_index2.js": {
-    "file": "chunks/index2.js",
-    "name": "index",
-    "imports": [
-      "_false.js"
-    ]
-  },
-  "_index3.js": {
-    "file": "chunks/index3.js",
-    "name": "index",
-    "imports": [
       "_client.js",
-      "_index2.js"
+      "_ui-icons.js"
     ]
   },
   "_internal.js": {
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_environment.js"
     ],
     "dynamicImports": [
@@ -189,13 +119,8 @@
     "file": "chunks/projects.js",
     "name": "projects",
     "imports": [
-      "_html.js",
-      "_factory.js",
-      "_external-link.js",
-      "_code.js",
-      "_index2.js",
-      "_Icon.js",
-      "_brand-github.js"
+      "_ui-icons.js",
+      "_factory.js"
     ],
     "dynamicImports": [
       "src/lib/icons/Devpost.svelte"
@@ -212,8 +137,12 @@
     "file": "chunks/theme.js",
     "name": "theme",
     "imports": [
-      "_index.js"
+      "_ui-icons.js"
     ]
+  },
+  "_ui-icons.js": {
+    "file": "chunks/ui-icons.js",
+    "name": "ui-icons"
   },
   "_utils.js": {
     "file": "chunks/utils.js",
@@ -225,22 +154,6 @@
     "src": "content/poetry/first-poem/+page.svx",
     "isDynamicEntry": true
   },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-400-normal.6-qcROiO.woff",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff"
-  },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-400-normal.V6pRDFza.woff2",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2"
-  },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-700-normal.D3wTyLJW.woff",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff"
-  },
-  "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2": {
-    "file": "_app/immutable/assets/jetbrains-mono-latin-700-normal.BYuf6tUa.woff2",
-    "src": "node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2"
-  },
   "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
     "file": "remote-entry.js",
     "name": "remote-entry",
@@ -248,7 +161,7 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_false.js",
+      "_ui-icons.js",
       "_environment.js"
     ]
   },
@@ -258,12 +171,11 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
-      "_false.js",
+      "_ui-icons.js",
       "_environment.js",
       "_shared.js",
       "_exports.js",
       "_utils.js",
-      "_index.js",
       "_internal.js"
     ]
   },
@@ -294,8 +206,8 @@
     "src": "src/routes/+error.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
-      "_index3.js"
+      "_ui-icons.js",
+      "_index.js"
     ]
   },
   "src/routes/+layout.server.ts": {
@@ -310,24 +222,16 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
-      "_index3.js",
-      "_Icon.js",
+      "_ui-icons.js",
+      "_index.js",
       "_common.js",
       "_theme.js",
       "_exports.js",
       "_utils.js",
-      "_client.js",
-      "_html.js"
+      "_client.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.CLE6CC2X.css"
-    ],
-    "assets": [
-      "_app/immutable/assets/jetbrains-mono-latin-400-normal.V6pRDFza.woff2",
-      "_app/immutable/assets/jetbrains-mono-latin-400-normal.6-qcROiO.woff",
-      "_app/immutable/assets/jetbrains-mono-latin-700-normal.BYuf6tUa.woff2",
-      "_app/immutable/assets/jetbrains-mono-latin-700-normal.D3wTyLJW.woff"
+      "_app/immutable/assets/_layout.BvIOJbmL.css"
     ]
   },
   "src/routes/+page.server.ts": {
@@ -346,15 +250,10 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_ProjectTags.js",
-      "_Icon.js",
       "_common.js",
-      "_brand-github.js",
-      "_date.js",
-      "_external-link.js",
-      "_brain.js",
-      "_code.js"
+      "_date.js"
     ]
   },
   "src/routes/about/+page.svelte": {
@@ -363,11 +262,8 @@
     "src": "src/routes/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
-      "_common.js",
-      "_brain.js",
-      "_code.js",
-      "_brand-github.js"
+      "_ui-icons.js",
+      "_common.js"
     ]
   },
   "src/routes/about/+page.ts": {
@@ -376,7 +272,7 @@
     "src": "src/routes/about/+page.ts",
     "isEntry": true,
     "imports": [
-      "_false.js"
+      "_ui-icons.js"
     ]
   },
   "src/routes/api/preview/[owner]/[repo]/+server.ts": {
@@ -404,7 +300,7 @@
     "src": "src/routes/philosophy/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_date.js",
       "_PostTags.js"
     ]
@@ -415,7 +311,7 @@
     "src": "src/routes/philosophy/[slug]/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_date.js",
       "_SlabTitle.js",
       "_PostTags.js",
@@ -451,7 +347,7 @@
     "src": "src/routes/pics/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_ui-icons.js"
     ]
   },
   "src/routes/pics/+page.ts": {
@@ -476,7 +372,7 @@
     "src": "src/routes/poetry/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_date.js",
       "_PostTags.js"
     ]
@@ -487,7 +383,7 @@
     "src": "src/routes/poetry/[slug]/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_date.js",
       "_SlabTitle.js",
       "_PostTags.js",
@@ -533,10 +429,9 @@
     "src": "src/routes/projects/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
+      "_ui-icons.js",
       "_date.js",
-      "_ProjectTags.js",
-      "_Icon.js"
+      "_ProjectTags.js"
     ]
   },
   "src/routes/projects/[slug]/+page.svelte": {
@@ -545,12 +440,11 @@
     "src": "src/routes/projects/[slug]/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
-      "_index3.js",
+      "_ui-icons.js",
+      "_index.js",
       "_date.js",
       "_projects.js",
-      "_ProjectTags.js",
-      "_Icon.js"
+      "_ProjectTags.js"
     ],
     "css": [
       "_app/immutable/assets/content.B7H8doqR.css"
@@ -584,9 +478,8 @@
     "src": "src/routes/socials/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js",
-      "_common.js",
-      "_external-link.js"
+      "_ui-icons.js",
+      "_common.js"
     ]
   }
 }
