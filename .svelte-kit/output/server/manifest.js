@@ -10,7 +10,7 @@ return {
 	assets: new Set(["css/catppuccin.css","css/colors.css","favicon.svg","fonts/jetbrains-mono-latin-400-normal.woff2","fonts/jetbrains-mono-latin-700-normal.woff2","images/avatar.webp","logos/hackcanada.svg","logos/rbc.svg","logos/stan.svg","logos/storagebox.svg","projects/advent-of-code-2025.png","projects/docsentinel.png","projects/docsentinel.webp","projects/mixgen.png","projects/mixgen.webp","projects/scrapy.png","projects/scrapy.webp","projects/tunl.png","projects/tunl.webp","resume.pdf","robots.txt"]),
 	mimeTypes: {".css":"text/css",".svg":"image/svg+xml",".woff2":"font/woff2",".webp":"image/webp",".png":"image/png",".pdf":"application/pdf",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.B7DXL-S9.js",app:"_app/immutable/entry/app.DNqFa09e.js",imports:["_app/immutable/entry/start.B7DXL-S9.js","_app/immutable/chunks/DUnRrMTe.js","_app/immutable/chunks/CvumDFOP.js","_app/immutable/entry/app.DNqFa09e.js","_app/immutable/chunks/Dp1pzeXC.js","_app/immutable/chunks/CvumDFOP.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.QUyaPVXi.js",app:"_app/immutable/entry/app.M7yF8cyK.js",imports:["_app/immutable/entry/start.QUyaPVXi.js","_app/immutable/chunks/Bi107Npv.js","_app/immutable/chunks/CvumDFOP.js","_app/immutable/entry/app.M7yF8cyK.js","_app/immutable/chunks/Dp1pzeXC.js","_app/immutable/chunks/CvumDFOP.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

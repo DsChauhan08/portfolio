@@ -26,8 +26,8 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const IMSETTINGS_INTEGRATE_DESKTOP: string;
 	export const SHELL: string;
+	export const IMSETTINGS_INTEGRATE_DESKTOP: string;
 	export const npm_command: string;
 	export const LSCOLORS: string;
 	export const SESSION_MANAGER: string;
@@ -37,11 +37,12 @@ declare module '$env/static/private' {
 	export const XDG_SESSION_PATH: string;
 	export const HISTCONTROL: string;
 	export const XDG_MENU_PREFIX: string;
-	export const HOSTNAME: string;
 	export const HISTSIZE: string;
+	export const HOSTNAME: string;
 	export const ICEAUTHORITY: string;
 	export const NODE: string;
 	export const SSH_AUTH_SOCK: string;
+	export const AGENT: string;
 	export const MEMORY_PRESSURE_WRITE: string;
 	export const npm_config_local_prefix: string;
 	export const XMODIFIERS: string;
@@ -53,8 +54,8 @@ declare module '$env/static/private' {
 	export const EDITOR: string;
 	export const XDG_SEAT: string;
 	export const PWD: string;
-	export const XDG_SESSION_DESKTOP: string;
 	export const LOGNAME: string;
+	export const XDG_SESSION_DESKTOP: string;
 	export const XDG_SESSION_TYPE: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const _: string;
@@ -62,11 +63,13 @@ declare module '$env/static/private' {
 	export const KITTY_PUBLIC_KEY: string;
 	export const XKB_DEFAULT_MODEL: string;
 	export const GTK2_RC_FILES: string;
+	export const OPENCODE_PID: string;
 	export const HOME: string;
+	export const OPENCODE: string;
 	export const SSH_ASKPASS: string;
 	export const LANG: string;
-	export const _JAVA_AWT_WM_NONREPARENTING: string;
 	export const LS_COLORS: string;
+	export const _JAVA_AWT_WM_NONREPARENTING: string;
 	export const XDG_CURRENT_DESKTOP: string;
 	export const npm_package_version: string;
 	export const MEMORY_PRESSURE_WATCH: string;
@@ -146,8 +149,8 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		IMSETTINGS_INTEGRATE_DESKTOP: string;
 		SHELL: string;
+		IMSETTINGS_INTEGRATE_DESKTOP: string;
 		npm_command: string;
 		LSCOLORS: string;
 		SESSION_MANAGER: string;
@@ -157,11 +160,12 @@ declare module '$env/dynamic/private' {
 		XDG_SESSION_PATH: string;
 		HISTCONTROL: string;
 		XDG_MENU_PREFIX: string;
-		HOSTNAME: string;
 		HISTSIZE: string;
+		HOSTNAME: string;
 		ICEAUTHORITY: string;
 		NODE: string;
 		SSH_AUTH_SOCK: string;
+		AGENT: string;
 		MEMORY_PRESSURE_WRITE: string;
 		npm_config_local_prefix: string;
 		XMODIFIERS: string;
@@ -173,8 +177,8 @@ declare module '$env/dynamic/private' {
 		EDITOR: string;
 		XDG_SEAT: string;
 		PWD: string;
-		XDG_SESSION_DESKTOP: string;
 		LOGNAME: string;
+		XDG_SESSION_DESKTOP: string;
 		XDG_SESSION_TYPE: string;
 		SYSTEMD_EXEC_PID: string;
 		_: string;
@@ -182,11 +186,13 @@ declare module '$env/dynamic/private' {
 		KITTY_PUBLIC_KEY: string;
 		XKB_DEFAULT_MODEL: string;
 		GTK2_RC_FILES: string;
+		OPENCODE_PID: string;
 		HOME: string;
+		OPENCODE: string;
 		SSH_ASKPASS: string;
 		LANG: string;
-		_JAVA_AWT_WM_NONREPARENTING: string;
 		LS_COLORS: string;
+		_JAVA_AWT_WM_NONREPARENTING: string;
 		XDG_CURRENT_DESKTOP: string;
 		npm_package_version: string;
 		MEMORY_PRESSURE_WATCH: string;

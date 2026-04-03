@@ -120,8 +120,8 @@ function _page($$renderer, $$props) {
     Featured($$renderer2, { projects: data.featuredProjects, maxProjects: 6 });
     $$renderer2.push(`<!----> <section class="grid gap-6 md:grid-cols-2"><div class="border-surface0 bg-base rounded-lg border p-4"><div class="mb-3 flex items-center justify-between"><h2 class="text-text flex items-center gap-2 text-sm font-semibold">`);
     Feather($$renderer2, { size: 16, class: "text-accent" });
-    $$renderer2.push(`<!----> Poetry</h2> <a href="/poetry" class="text-accent/80 hover:text-accent text-xs">`);
-    External_link($$renderer2, { size: 14 });
+    $$renderer2.push(`<!----> Poetry</h2> <a href="/poetry" class="text-accent/80 hover:text-accent text-xs" aria-label="Open poetry page">`);
+    External_link($$renderer2, { size: 14, "aria-hidden": "true" });
     $$renderer2.push(`<!----></a></div> `);
     if (data.latestPosts.length > 0) {
       $$renderer2.push("<!--[-->");
@@ -145,10 +145,10 @@ function _page($$renderer, $$props) {
     }
     $$renderer2.push(`<!--]--></div> <div class="border-surface0 bg-base rounded-lg border p-4"><div class="mb-3 flex items-center justify-between"><h2 class="text-text flex items-center gap-2 text-sm font-semibold">`);
     Brain($$renderer2, { size: 16, class: "text-accent" });
-    $$renderer2.push(`<!----> Keeping Myself Sane</h2> <a href="/philosophy" class="text-accent/80 hover:text-accent text-xs">`);
-    External_link($$renderer2, { size: 14 });
-    $$renderer2.push(`<!----></a></div> <p class="text-subtext0 text-sm">Thoughts on philosophy, systems thinking, and personal growth in technology.</p> <a href="/philosophy" class="text-accent mt-3 inline-flex items-center gap-1 text-sm hover:underline">Read more `);
-    Arrow_right($$renderer2, { size: 14 });
+    $$renderer2.push(`<!----> Keeping Myself Sane</h2> <a href="/philosophy" class="text-accent/80 hover:text-accent text-xs" aria-label="Open philosophy page">`);
+    External_link($$renderer2, { size: 14, "aria-hidden": "true" });
+    $$renderer2.push(`<!----></a></div> <p class="text-subtext0 text-sm">Thoughts on philosophy, systems thinking, and personal growth in technology.</p> <a href="/philosophy" class="text-accent mt-3 inline-flex items-center gap-1 text-sm hover:underline">Read philosophy notes `);
+    Arrow_right($$renderer2, { size: 14, "aria-hidden": "true" });
     $$renderer2.push(`<!----></a></div></section></div>`);
   });
 }

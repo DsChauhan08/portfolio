@@ -69,8 +69,12 @@
 					<IconFeather size={16} class="text-accent" />
 					Poetry
 				</h2>
-				<a href="/poetry" class="text-accent/80 hover:text-accent text-xs">
-					<IconExternalLink size={14} />
+				<a
+					href="/poetry"
+					class="text-accent/80 hover:text-accent text-xs"
+					aria-label="Open poetry page"
+				>
+					<IconExternalLink size={14} aria-hidden="true" />
 				</a>
 			</div>
 			{#if data.latestPosts.length > 0}
@@ -103,8 +107,12 @@
 					<IconBrain size={16} class="text-accent" />
 					Keeping Myself Sane
 				</h2>
-				<a href="/philosophy" class="text-accent/80 hover:text-accent text-xs">
-					<IconExternalLink size={14} />
+				<a
+					href="/philosophy"
+					class="text-accent/80 hover:text-accent text-xs"
+					aria-label="Open philosophy page"
+				>
+					<IconExternalLink size={14} aria-hidden="true" />
 				</a>
 			</div>
 			<p class="text-subtext0 text-sm">
@@ -114,7 +122,7 @@
 				href="/philosophy"
 				class="text-accent mt-3 inline-flex items-center gap-1 text-sm hover:underline"
 			>
-				Read more <IconArrowRight size={14} />
+				Read philosophy notes <IconArrowRight size={14} aria-hidden="true" />
 			</a>
 		</div>
 	</section>
